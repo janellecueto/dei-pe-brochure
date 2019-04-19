@@ -65,6 +65,30 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 .descript{padding: 10px;}
 .descript img{width: 100%;}
 
+#amita div.back{background-image: url("../photos/healthcare/St Alexius 3.JPG"); }
+#adventHealth div.back{background-image: url("../photos/healthcare/munroe.JPG"); }
+#advocate div.back{background: url("../photos/healthcare/00550 - 2S8E8374.jpg"); background-size: cover;}
+#carle div.back{background: url("../photos/healthcare/ortho-sports-building.jpeg"); }
+#loyola div.back{background: url("../photos/healthcare/loyola-mc.JPG");  }
+#nch div.back{background: url("../photos/healthcare/nch-h.JPG"); }
+#northshore div.back{background: url("../photos/healthcare/northshore-h.JPG"); }
+#northwestern div.back{background: url("../photos/healthcare/northwestern-h.JPG");}
+#childrens div.back{background: url("../photos/healthcare/lurie-h.jpg");}
+#presence div.back{background: url("../photos/healthcare/resurrection-mc2.jpeg"); }
+#rush div.back{background: url("../photos/healthcare/rush-h.JPG"); background-size: cover; background-position: center;}
+#uchicago div.back{background: url("../photos/healthcare/uchicago-h.JPG");}
+#uic div.back{background: url("../photos/healthcare/uic-mc.JPG"); background-size: cover;}
+#elmhurst div.back{background: url("../photos/healthcare/elmhurst-h.jpg");}
+#hines div.back{background: url("../photos/healthcare/hinesva-h.JPG");}
+#kindred div.back{background: url("../photos/healthcare/kindred-h.jpg"); background-size: cover;}
+#mercy div.back{background: url("../photos/healthcare/mercy-h.JPG"); background-size: cover;}
+#rml div.back{background: url("../photos/healthcare/rml-h.JPG");}
+#shriners div.back{background: url("../photos/healthcare/shriners-h.JPG");}
+#silvercross div.back{background: url("../photos/healthcare/silvercross-h.jpg");}
+#stanthony div.back{background: url("../photos/healthcare/stanthony-h2.jpg");}
+#westsuburban div.back{background: url("../photos/healthcare/westsuburban-h2.png");}
+#columbus div.back{background: url("../photos/healthcare/columbus-h.jpg");}
+
 /****** General Styling ******/
 h1{font-size: 5vw;}
 h3{font-size: 3vw;}
