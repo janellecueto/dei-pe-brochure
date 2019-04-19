@@ -13,12 +13,16 @@
     <script src="../js/bootstrap.js"></script>
     <style>
         body{overflow-x: hidden; }
-        .page{height: 70vh;}
+        .page{height: 50vh;}
         .sidepanel{height: 100%; position: relative;}
         .front{display: block; position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); color: #fcf7f8; text-align: center;}
         .front button{color: white; border-color: white; background: transparent; transition: all 0.3s ease-in-out;}
         .front button:hover{color: white; background: rgba(231,84,87,0.77);}
-        .info{display: flex; max-height: 100%; color: #fcf7f8; flex-flow: wrap column;}
+        .info{display: none; max-height: 50vh; color: #fcf7f8; background: #323031; flex-flow: wrap column;}
+        .hideCol{display: none;}
+        .info ul{display: flex; flex-flow: wrap column; max-height: 50vh;}
+        /* ul.outer li{float: left; width: 30%;} */
+
     </style>
 </head>
 <body>
@@ -27,72 +31,71 @@
     <h1>PROJECTS <small>| Institutional / Educational</small></h1>
 </div>
 <div class="row page">
-    <div class="col-md" style="background: #323031;" id="elementary">
+    <div class="col-md explore active" style="background: #323031;" id="elementary">
 <!--        <div class="back"></div>-->
         <div class="front">
             <h2>Elementary Schools</h2>
-            <button class="btn" onclick="$('#elementaryInfo').show()">Explore</button>
+            <button class="btn infoShow" id="elementaryBtn">Explore</button>
         </div>
-        <div class="info" id="elementaryInfo">
-            <ul><li>District #36
-                <ul><li>Winnetka (Winnetka, IL)</li></ul>
-                </li>
-                <li>District #35
-                    <ul><li>Glencoe (Glencoe, IL)</li></ul>
-                </li>
-                <li>District #46
-                    <ul><li>Garfield (Elgin, IL)</li>
-                    <li>McKinley (Elgin, IL)</li>
-                    <li>Washington (Elgin, IL)</li></ul>
-                </li>
-                <li>District #59
-                    <ul><li>Devonshire (Elk Grove, IL)</li>
-                    <li>Grove (Elk Grove, IL)</li>
-                    <li>Rupley (Elk Grove, IL)</li>
-                    <li>Clearmont (Elk Grove, IL)</li>
-                    </ul>
-                </li>
-                <li>District #64
-                <ul>
-                    <li>Carpenter (Park Ridge, IL)</li>
-                    <li>Franklin (Park Ridge, IL)</li>
-                    <li>Washington (Park Ridge, IL)</li>
-                </ul>
-                </li>
-                <li>District #74
-                <ul>
-                    <li>Todd (Lincolnshire, IL)</li>
-                </ul>
-                </li>
-                <li>District #107
-                <ul>
-                    <li>Indian Trails (Highland Park, IL)</li>
-                </ul>
-                </li>
-                <li>District #155
-                <ul>
-                    <li>Wilson (Calumet City, IL)</li>
-                </ul>
-                </li>
-                <li>District #156
-                <ul>
-                    <li>Lincoln (Calumet City, IL)</li>
-                </ul>
-                </li>
-                <li>District #300
-                <ul>
-                    <li>Neubert (Algonquin, IL)</li>
-                    <li>Sleepy Hollow (Sleepy Hollow, IL)</li>
-                </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md" style="background: #d3ced6;"></div>
-    <div class="col-md" style="background: #7171a0;"></div>
-    <div class="sidepanel">
 
     </div>
+    <div class="side-drawer col-md-9 info" id="elementaryInfo">
+        <ul class="outer">
+            <li>District #36
+                <ul><li>Winnetka (Winnetka, IL)</li></ul>
+            </li>
+            <li>District #35
+                <ul><li>Glencoe (Glencoe, IL)</li></ul>
+            </li>
+            <li>District #46
+                <ul><li>Garfield (Elgin, IL)</li>
+                <li>McKinley (Elgin, IL)</li>
+                <li>Washington (Elgin, IL)</li></ul>
+            </li>
+            <li>District #59
+                <ul><li>Devonshire (Elk Grove, IL)</li>
+                <li>Grove (Elk Grove, IL)</li>
+                <li>Rupley (Elk Grove, IL)</li>
+                <li>Clearmont (Elk Grove, IL)</li>
+                </ul>
+            </li>
+            <li>District #64
+            <ul>
+                <li>Carpenter (Park Ridge, IL)</li>
+                <li>Franklin (Park Ridge, IL)</li>
+                <li>Washington (Park Ridge, IL)</li>
+            </ul>
+            </li>
+            <li>District #74
+            <ul>
+                <li>Todd (Lincolnshire, IL)</li>
+            </ul>
+            </li>
+            <li>District #107
+            <ul>
+                <li>Indian Trails (Highland Park, IL)</li>
+            </ul>
+            </li>
+            <li>District #155
+            <ul>
+                <li>Wilson (Calumet City, IL)</li>
+            </ul>
+            </li>
+            <li>District #156
+            <ul>
+                <li>Lincoln (Calumet City, IL)</li>
+            </ul>
+            </li>
+            <li>District #300
+            <ul>
+                <li>Neubert (Algonquin, IL)</li>
+                <li>Sleepy Hollow (Sleepy Hollow, IL)</li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md explore active" style="background: #d3ced6;" id="middle"></div>
+    <div class="col-md explore active" style="background: #7171a0;" id="high"></div>
 </div>
 <div class="row page">
     <div class="col-md" style="background: #5b4c73;"></div>
@@ -107,6 +110,30 @@
         $("#nav-placeholder").load("../templates/navbar.html");
         $("#bottomNav-placeholder").load("../templates/bottomnav.html");
     });
+
+    $('#elementaryBtn').click(function(){
+        let mid = this.id;      //id as a string?
+        mid = mid.substr(0, mid.length-3);
+        let $explore = $(this).closest('.explore');    //div col on top of button
+        let $row = $explore.closest('.row');            //row on top of div
+        // alert(mid);
+        if($(this).hasClass('infoShow')){
+            $(this).removeClass("infoShow").addClass("infoHide");
+
+            $explore.removeClass("active");
+            $row.find('.active').hide();        //hide the other cols
+            // $('#middle').hide();
+            // $('#high').hide();
+            $('#'+mid+'Info').show();
+        }
+        else if($(this).hasClass("infoHide")){
+            $(this).removeClass("infoHide").addClass("infoShow");
+            $explore.addClass("active");
+            $row.find('.active').show();
+            $('#'+mid+'Info').hide();
+        }
+
+    })
 </script>
 </body>
 </html>
