@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dickerson Engineering, Inc.</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <script src="../jQuery/jquery.mask.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <style>
+        body{overflow-x: hidden;}
+        .section{height: calc(50vh - 30px); text-align: center; align-items: center;justify-content: center;}
+        .mtext{margin: auto; color: white; filter: none; position: relative; top: calc(-50% - 30px);}
+        .mtext button{display: none; color: white; border-color: white; background: transparent; transition: all 0.3s ease-in-out;}
+        .mtext button:hover{color: white; background: rgba(231,84,87,0.77);}
+        .sec{text-align: center; height: 250px; font-size: 20px; font-weight: bold; width: 100vw;}
+        .back{filter: brightness(40%) grayscale(80%); width: 100%; height: 100%; z-index: -5; position: relative; top: 0;
+            right: 0; background-position: center; transition: all 0.5s ease-in-out;}
+
+        /*.mtext:hover{color: red;}*/
+        #hDiv .back{background-image: url("../photos/07350 SH ACC Surg.jpg");  }
+        #iDiv .back{background-image: url("../photos/McDs_RUSH-Clark-20923_1.jpg");}
+        #rDiv .back{background-image: url("../photos/04600 -  Sports Ortho 1243E.jpg"); }
+        #mDiv .back{background-image: url("../photos/66919-mcds.jpg");}
+    </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="row sec" style="margin-top: 56px;" id="hDiv">
+    <div class="back"></div>
+    <div class="mtext">
+        <span>HEALTH CARE</span><br>
+        <button class="btn" onclick="location.href='healthcare.html';">EXPLORE</button>
+    </div>
+</div>
+<div class="row sec" id="iDiv">
+    <div class="back"></div>
+    <div class="mtext">
+        <span>INSTITUTIONAL</span><br>
+        <button class="btn" onclick="location.href='institutional.html';">EXPLORE</button>
+    </div>
+</div>
+<div class="row sec" id="rDiv">
+    <div class="back"></div>
+    <div class="mtext" >
+        <span>RECREATIONAL</span><br>
+        <button class="btn" onclick="location.href='recreational.html';">EXPLORE</button>
+    </div>
+</div>
+<div class="row sec" id="mDiv">
+    <div class="back"></div>
+    <div class="mtext">
+        <span>MISCELLANEOUS</span><br>
+        <button class="btn" onclick="location.href='misc.html';">EXPLORE</button>
+    </div>
+</div>
+
+<div id="bottomNav-placeholder"></div>
+</body>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("../templates/navbar.html");
+        $("#bottomNav-placeholder").load("../templates/bottomnav.html");
+    });
+
+    $(".sec").hover(function(){
+       $(this).find(".back").css("filter", "brightness(90%) grayscale(0)");
+       $(this).find(".mtext button").show();
+    }, function(){
+        $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+        $(this).find(".mtext button").hide();
+    });
+</script>
+</html>

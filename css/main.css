@@ -1,0 +1,110 @@
+/* this stylesheet contains all extra styling on top of bootstrap. */
+/* NOTE: declare this script AFTER the bootstrap includes */
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+/****** Navbar styling ******/
+a.nav-link, a.navbar-brand{color: #cccccc; transition: ease-in 0.3s;}
+a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
+#portalLink{color: #e75457;}
+    /****** Dropdown menu items for navbar*****/
+.dropdwn-content{display: none; position: absolute; border-radius: 4px;}
+.dropdwn-content a{color: white; background: rgba(0,0,0,0.8); padding: 8px 6px; display:block; text-decoration: none;}
+.dropdwn-content a:hover{background: rgba(52,58,64,0.82);}
+.dropdwn:hover .dropdwn-content{display: block;}
+#bottomNav{background-color: #343a40; color: #fcf7f8; position: relative; bottom: 0;}
+#bottomNav a{color: #fcf7f8;transition: ease-in 0.3s; }
+#bottomNav a:hover{text-decoration: none; color: #e75457;}
+
+/****** welcome paragraph styling on homepage ******/
+#welcome{top: 50px; margin-bottom: 20px;}
+
+/****** Slide show styling on homepage ******/
+.carousel-item img{width: 100%; background: linear-gradient(#491217, #721c24); opacity: 0.7%; }
+#banner{top: 56px; width: 100%;}
+
+/******* DEI Logo placement on homepage*********/
+#dei{text-align: center; color: white; padding-top: 8vw; width: 80vw; position: absolute; top: 56px;
+    right: calc(50% - 40vw); margin-bottom: 100px; z-index: 2; font-family: 'Anton', sans-serif;}
+#dei img{height: 15vw; margin: 10px;}
+
+/****** Services section on homepage******/
+#services{background: #5b4c73; color: white; margin: 0; padding: 60px; text-align: center;}
+#services h2{text-align: center; margin-bottom: 40px;}
+#services .row{ text-align: center; padding-bottom: 50px;}
+#services a{margin: auto; background: transparent; border: 2px solid white;}
+#services a:hover{background: white; color: #5b4c73;}
+
+/******** About/Staff *********/
+.profile{text-align: center;}
+.profile img{width: 80%;}
+.bio{display: block; width: 80%; margin: auto;}
+.roleDiv{padding: 0 40px 20px 40px; opacity: .8;}
+.states ul{height: 200px; display: flex; flex-direction: column; flex-wrap: wrap; list-style-type: none; padding: 0;}
+#vicePresident .vp1{display: none;}
+#keyPersonnel .row{padding: 0 60px;}
+
+/****** Contact form styling ******/
+#contactUs{padding: 60px; background: #7171a0; color: white;}
+#contactUs a{color: white;}
+
+.form-control:focus{border: #e75457; box-shadow: 0 0 0 0.2rem rgba(231,84,87,0.75);}
+#contactForm input[type=submit]{width: 100%; border: 2px solid white; color: white; background-color: transparent;}
+#contactForm input[type=submit]:focus, #contactForm input[type=submit]:hover{background-color: white; color: #e75457; box-shadow: none;}
+
+/****** Projects tab styling ******/
+.back{filter: brightness(40%) grayscale(80%); width: 100%; height: 100%; z-index: -5; position: relative; top: 0;
+    right: 0; background-position: center; transition: all 0.5s ease-in-out;}
+    /****** Healthcare section ******/
+.group{display: block; width: 100%; height: 100%; cursor: pointer;}
+.group img{width: 80%; position: absolute; top: 50%; left: 50%; max-width: 268px; transform: translateY(-50%) translateX(-50%);}
+.container-big{width: 100%; padding: 0; margin: auto;}
+.drawer{
+    display: none; background: #343a40; color: white; max-width: 100vw; height: auto;
+}
+.descript{padding: 10px;}
+.descript img{width: 100%;}
+
+/****** General Styling ******/
+h1{font-size: 5vw;}
+h3{font-size: 3vw;}
+.container, .container-fluid{ position: relative; padding: 60px;}
+.container.top{top: 0; padding: 20px;}
+.jumbotron{margin-top: 56px; background-color: #7171a0; color: white;}
+a.btn{font-weight: bold;}
+small{opacity: 0.8;}
+.page-title{margin-top: 56px; padding: 40px; font-family: 'Anton', sans-serif;}
+.page-title.inverse{background: #343a40; color: white;}
+span.role{font-style: italic;} /** From About/Staff **/
+.row-big{margin-bottom: 50px;}
+p.service{color: #e75457;}
+
+/****** Resizing ******/
+    /***** DEI logo on homepage ******/
+@media screen and (max-width: 740px){
+    #dei h1{display: none;}
+    #dei h3{display: none;}
+    #dei img{height: 30vw;}
+}
+    /***** Slide show on homepage ******/
+@media screen and (max-width: 400px){
+    .carousel-inner{height: 250px;}
+    .carousel-item img{height: 250px; width: auto;}
+    #dei img{height: 40vw;}
+    #services hr{display: none;}
+}
+    /******* Profile pictures on About/Staff ***********/
+@media screen and (max-width: 768px){
+    .profile img{width: 65%;}
+    .profile{margin-bottom: 20px;}
+    #vicePresident .vp1{display: block;}
+    #vicePresident .vp2{display: none;}
+    .page-title > h1{
+        font-size: 9vw; text-align: center;
+    }
+}
+@media screen and (max-width: 576px){
+    .page-title{padding: 15px;}
+    .group img{display: block; position: center; max-height: 80%; width: auto; max-width: 90%; margin: auto;
+        transform: translateY(-50%) translateX(-50%);}
+}

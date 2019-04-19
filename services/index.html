@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dickerson Engineering, Inc.</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <script src="../jQuery/jquery.mask.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <style>
+        .holder{padding: 0 60px;}
+        h2{text-align: center;}
+        .service{display: flex; width: 100%; height: 500px; margin: auto; text-align: center;
+            justify-content: center; align-items: center; background: white; opacity: 100%; transition: ease-in 0.5s;
+            overflow: hidden;}
+        .service span{font-size: 30px;}
+        .service img{flex-shrink: 0; height: 100%; z-index: -1;}
+
+        .descript{display: flex; width: calc(100% - 30px); height: 500px; background: #5b4c73; justify-content: center; align-items: center;
+            text-align: center; color: white; position: absolute; top: 0; z-index: -1; padding: 5px;}
+        .col-lg-3{margin-bottom: 15px;}
+        .col-lg-3:hover .service{opacity: 0; }
+
+        @media screen and (max-width: 992px){
+            .service, .descript{height: 200px;}
+        }
+        @media screen and (max-width: 400px){
+            .service, .descript{height: 100vw;}
+        }
+    </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-title">
+    <h1>SERVICES</h1>
+</div>
+<div class="holder">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="service">
+                <h2>DESIGN DOCUMENTS</h2>
+            </div>
+            <div class="descript">
+                <p>Our approach is to design a system to compliment the character of the building, comply with applicable
+                codes, and include the clients' individual design criteria. Design Documents Include: detailed working
+                drawings, electrical specification, coordination meetings and full construction administration services
+                including review of shop drawings and site observation trips with written reports.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service" style="background-image: url('photos/GENERATOR %23 1 (9).jpg'); background-size: cover;">
+                <!--<img src="photos/GENERATOR%20%23%201%20(9).jpg" alt="Review Work Image">-->
+                <h2 style="color: #b1a5e4;">REVIEW WORK</h2>
+            </div>
+            <div class="descript">
+                <p>DEI is available to conduct visual observations of buildings for the purpose of verifying code compliance. </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service"><h2>COMMISSIONING</h2></div>
+            <div class="descript">
+                <p>We will attend design and construction meetings, performs site construction observations, observe
+                    factory equipment testing, and will direct and observe functional performance testing of systems and
+                    equipment. We can provide a commissioning specification and commissioning plan during the project
+                    design phase. </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service" style="border: 2px solid #5b4c73; color: #5b4c73;"><h2>LIGHTING CALCULATIONS</h2></div>
+            <div class="descript">
+                <p>State and/or local Code requirements for energy compliance need documented verification. DEI can provide
+                    point-to-point lighting calculations for interior/exterior lighting levels and produce the necessary
+                    documentation needed for energy code compliance.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="service" style="border: 2px solid #5b4c73; color: #5b4c73;"><h2>ENERGY CONSERVATION STUDIES</h2></div>
+            <div class="descript">
+                <p>The rising cost of energy has put a major burden on the operating expenses of every industrial and
+                    commercial enterprise. Electrical energy conservation is and will continue to be, one of the major
+                    concerns of the construction industry. DEI will analyze relevant data to design the most affordable
+                    and efficient energy saving system for all projects.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service"><h2>ENERGY CODE COMPLIANCE</h2></div>
+            <div class="descript" style="background-image: url('photos/SWGR_F (2).jpg'); background-size: cover;">
+                <p>With most states and municipalities enacting energy codes, achieving compliance has become a necessity.
+                    Effective compliance unlocks additional energy savings, reduced costs, higher building resale value,
+                    and minimized environmental impact. DEI has LEED and Chicago Registered Energy Professionals on staff.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service" style="background-image: url('photos/ATS_3CE (7).jpg'); background-size: cover;" >
+                <span style="color: #b1a5e4;">SHORT-CIRCUIT ANALYSIS AND COORDINATION STUDY</span>
+            </div>
+            <div class="descript">
+                <p>DEI can provide short circuit analysis and coordination studies for the entire electrical distribution
+                    system.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service"><span>DATA WIRING SYSTEMS</span></div>
+            <div class="descript">
+                <p>Voice/Data cabling systems must provide quality, flexibility and function not only for current needs
+                    but also to meet future requirements. Systems need to be designed to support multi-product, multi-vendor
+                    environments and should also incorporate the TIA/EIA guidelines. DEI can help you sort through the
+                    many types of cables and cabling configurations to assemble cabling documents to provide an infrastructure
+                    that is adaptable to this ever changing technology.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="service" style="background-image: url('photos/UPS.jpg'); background-size: cover;">
+                <h2 style="color: #b1a5e4;">UPS SYSTEMS</h2>
+            </div>
+            <div class="descript">
+                <p>The increasingly complex field of electricity today relies heavily on the use of uninterruptible power
+                    systems to provide closely regulated no-break power to a wide variety of critical loads for computers,
+                    communication systems, process controls and more. The vast array of different systems available can
+                    be confusing. DEI can help select and design a UPS system tailored to your specific requirements.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="service"><h2>MECHANICAL WORK PACKAGE</h2></div>
+            <div class="descript">
+                <p>If necessary, DEI can team with our mechanical associates to create a combined MEP/FP design team.
+                    Our mechanical associates have worked in concert with DEI for decades.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="bottomNav-placeholder"></div>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("../templates/navbar.html");
+        $("#bottomNav-placeholder").load("../templates/bottomnav.html");
+    });
+</script>
+</body>
+</html>

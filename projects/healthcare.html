@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEI Projects</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <script src="../jQuery/jquery.mask.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <style>
+        body{overflow-x: hidden; background: #343a40;}
+
+        #proj1 div.row{height: 50vh;}
+        .row > div.col-sm-3{padding: 0;}
+
+        .drawer-split{display: block; height: auto; width: 100%;}
+        .left, .right{display: block; width: 48%; }
+        .left{padding-left: 15px; float: left;}
+        .right{float: right;}
+        .mid{ margin: auto; display: block; width: 75%;}
+        div.back{filter: brightness(40%) grayscale(80%); width: 100%; height: 100%; z-index: -5; position: relative; top: 0;
+            right: 0; background-position: center; transition: all 0.5s ease-in-out; background-size: cover;}
+
+        .carousel{max-height: 700px;}
+        .carousel-inner{max-height: 700px;}
+        .carousel-inner > .item >img{margin: auto;}
+
+        #amita div.back{background-image: url("../photos/healthcare/St Alexius 3.JPG"); }
+        #adventHealth div.back{background-image: url("../photos/healthcare/munroe.JPG"); }
+        #advocate div.back{background: url("../photos/healthcare/00550 - 2S8E8374.jpg"); background-size: cover;}
+        #carle div.back{background: url("../photos/healthcare/ortho-sports-building.jpeg"); }
+        #loyola div.back{background: url("../photos/healthcare/loyola-mc.JPG");  }
+        #nch div.back{background: url("../photos/healthcare/nch-h.JPG"); }
+        #northshore div.back{background: url("../photos/healthcare/northshore-h.JPG"); }
+        #northwestern div.back{background: url("../photos/healthcare/northwestern-h.JPG");}
+        #childrens div.back{background: url("../photos/healthcare/lurie-h.jpg");}
+        #presence div.back{background: url("../photos/healthcare/resurrection-mc2.jpeg"); }
+        #rush div.back{background: url("../photos/healthcare/rush-h.JPG"); background-size: cover; background-position: center;}
+        #uchicago div.back{background: url("../photos/healthcare/uchicago-h.JPG");}
+        #uic div.back{background: url("../photos/healthcare/uic-mc.JPG"); background-size: cover;}
+        #elmhurst div.back{background: url("../photos/healthcare/elmhurst-h.jpg");}
+        #hines div.back{background: url("../photos/healthcare/hinesva-h.JPG");}
+        #kindred div.back{background: url("../photos/healthcare/kindred-h.jpg"); background-size: cover;}
+        #mercy div.back{background: url("../photos/healthcare/mercy-h.JPG"); background-size: cover;}
+        #rml div.back{background: url("../photos/healthcare/rml-h.JPG");}
+        #shriners div.back{background: url("../photos/healthcare/shriners-h.JPG");}
+        #silvercross div.back{background: url("../photos/healthcare/silvercross-h.jpg");}
+        #stanthony div.back{background: url("../photos/healthcare/stanthony-h2.jpg");}
+        #westsuburban div.back{background: url("../photos/healthcare/westsuburban-h2.png");}
+        #columbus div.back{background: url("../photos/healthcare/columbus-h.jpg");}
+
+    </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="page-title inverse">
+    <h1>PROJECTS <small>| Health Care</small></h1>
+</div>
+<div id="proj1" class="container-big">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="group" id="adventHealth">
+                <div class="back"></div>
+                <img src="../photos/healthcare/ocala-white.png" alt="Advent Health Ocala">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="group" id="advocate">
+                <div class="back"></div>
+                <img src="../photos/healthcare/advocate-white.png" alt="Advocate Health Care">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="amita">
+                <div class="back"></div>
+                <img src="../photos/healthcare/amita-white.png" alt="Amita Health">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="group" id="carle">
+                <div class="back"></div>
+                <img src="../photos/healthcare/carle-white.png" alt="Carle Foundation Hospital">
+            </div>
+        </div>
+
+    </div>
+    <div class="drawer" id="adventHealthInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Florida Hospital Ocala<br><small>Ocala, FL</small></h2>
+                <p>(Formerly Munroe Regional Medical Center)</p>
+                <ul>
+                    <li>New Data Center - Off Site</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="amitaInfo">
+        <div class="mid">
+            <div class="descript">
+                <div id="abpics" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#abpics" data-slide-to="0" class="active"></li>
+                        <li data-target="#abpics" data-slide-to="1"></li>
+                        <li data-target="#abpics" data-slide-to="2"></li>
+                        <li data-target="#abpics" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../photos/healthcare/00850%20-%20ABMC%20Hospice%206.jpg" alt="Photo 01">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../photos/healthcare/1202H.jpg" alt="Photo 02">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../photos/healthcare/St%20Alexius%204.JPG" alt="Photo 03">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../photos/healthcare/alexian01.jpg" alt="Photo 04">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#abpics" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#abpics" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-split">
+            <div class="left">
+                <div class="descript">
+                    <h2>Alexian Brothers Medical Center<br><small> Elk Grove, IL</small></h2>
+                    <p class="service">Service since 1992</p>
+                    <ul>
+                        <li>Bed Tower and Medical Mall</li>
+                        <li>Cath Lab Expansion/PIR</li>
+                        <li>Chapel</li>
+                        <li>Cooling Tower Replacement</li>
+                        <li>Distribution Upgrade - Campus wide</li>
+                        <li>Electric Service & Generator Improvements</li>
+                        <li>Fire Alarm Upgrade - Campus wide</li>
+                        <li>ICU Expansion</li>
+                        <li>Infrastructure Master Plan</li>
+                        <li>MRI Expansion</li>
+                        <li>Open Heart Surgery Addition</li>
+                        <li>Operating Room Expansion</li>
+                        <li>Parking Structure Expansion</li>
+                        <li>Patient Tower Infrastructure</li>
+                        <li>Pediatric Emergency Department Expansion</li>
+                        <li>PET/CT Scanner Replacement</li>
+                        <li>Rehab Hospital Addition</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>St. Alexius Medical Center<br><small>Hoffman Estates, IL</small></h2>
+                    <ul>
+                        <li>2nd Floor LDR Renovation</li>
+                        <li>6th Floor OT/PT</li>
+                        <li>Cath Lab</li>
+                        <li>Central Plant</li>
+                        <li>Generator Replacement</li>
+                        <li>MRI & C/T</li>
+                        <li>Pathology Lab</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="descript">
+                    <h2>Adventist Medical Center LaGrange<br><small>LaGrange, IL</small></h2>
+                    <ul>
+                        <li>Family Practice</li>
+                        <li>Physical Therapy Suite</li>
+                        <li>Radiology Remodel</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Adventist Medical Center Hinsdale<br><small>Hinsdale, IL</small></h2>
+                    <p class="service">Service since 1975</p>
+                    <ul>
+                        <li>CCU Replacement</li>
+                        <li>Distribution Upgrade - Campus wide</li>
+                        <li>DuPage Imaging Rad Room</li>
+                        <li>Emergency Generator Upgrade</li>
+                        <li>ER Remodel & Expansion</li>
+                        <li>Grant Square Ct</li>
+                        <li>ICU Remodel</li>
+                        <li>LDR Remodel</li>
+                        <li>North Building Infrastructure Improvements</li>
+                        <li>Open Heart Surgery</li>
+                        <li>Patient Pavilion</li>
+                        <li>Surgery Department - New</li>
+                        <li>Women's/Children Center</li>
+                        <li>UPS Upgrade</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Glen Oaks Hospital<br><small>Lombard, IL</small></h2>
+                    <ul>
+                        <li>Emergency Power Systems Separation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--        <div class="descript">-->
+<!--            <img src="../photos/healthcare/1202B.jpg" alt="Alexian Brothers Hospice" >-->
+<!--        </div>-->
+        <div class="descript">
+            <img src="../photos/healthcare/blank.gif" alt=".." style="height: 15px;">
+        </div>
+    </div><!-- end amitaInfo-->
+    <div class="drawer" id="advocateInfo">
+        <div class="mid">
+            <div class="descript">
+                <div id="advocatePics" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#advocatePics" data-slide-to="0" class="active"></li>
+                        <li data-target="#advocatePics" data-slide-to="1"></li>
+                        <li data-target="#advocatePics" data-slide-to="2"></li>
+                        <li data-target="#advocatePics" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../photos/healthcare/00550%20-%202S8E8374.jpg" alt="Photo 01">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../photos/healthcare/00550%20-%202S8E8374.jpg" alt="Photo 02">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../photos/healthcare/00550%20-%202S8E8374.jpg" alt="Photo 03">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../photos/healthcare/00550%20-%202S8E8374.jpg" alt="Photo 04">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#advocatePics" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#advocatePics" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-split">
+            <div class="left">
+                <div class="descript">
+                    <h2>Christ Medical Center<br><small>Oak Lawn, IL</small></h2>
+                    <ul>
+                        <li>Chiller Plant Study</li>
+                        <li>Master Planning</li>
+                        <li>Outpatient Pavilion</li>
+                        <li>VISICU</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Condell Memorial Hospital<br><small>Libertyville, IL</small></h2>
+                    <ul>
+                        <li>CT Scan</li>
+                        <li>Day Care Center - New</li>
+                        <li>Fitness Center - New</li>
+                        <li>Fluoroscopy Equipment Replacement</li>
+                        <li>Surgery Unit Addition</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Good Samaritan Hospital<br><small>Downers Grove, IL</small></h2>
+                    <ul>
+                        <li>5th Floor Physical Therapy Remodel</li>
+                        <li>Cooling Plant Upgrade</li>
+                        <li>Generator Replacement</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Good Shepherd Hospital<br><small>Barrington, IL</small></h2>
+                    <p class="service">Service since 2003</p>
+                    <ul>
+                        <li>Ambulatory Care Addition</li>
+                        <li>Cooling Plant Upgrade</li>
+                        <li>Domestic Cold Water System Upgrade</li>
+                        <li>Emergency Generator Upgrade</li>
+                        <li>Emergency Power Upgrade</li>
+                        <li>Emergency Room Addition</li>
+                        <li>North Addition Cardiac Cath</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Bethany Hospital<br><small>Chicago, IL</small></h2>
+                    <p>(Closed)</p>
+                    <ul>
+                        <li>EISCU</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="descript">
+                    <h2>Lutheran General Hospital<br><small>Park Ridge, IL</small></h2>
+                    <p class="service">Service since 1980</p>
+                    <ul>
+                        <li>Bed Replacement Tower</li>
+                        <li>Cancer Care Center Remodel</li>
+                        <li>Cancer Center Expansion</li>
+                        <li>Chilled Water Plant - Nessett Pavilion</li>
+                        <li>Computer Department Infrastructure</li>
+                        <li>Computer Room Electrical Service, Generator, and UPS System Upgrade</li>
+                        <li>Emergency Department Remodel</li>
+                        <li>Infrastructure Upgrade</li>
+                        <li>LDR Renovation/Expansion</li>
+                        <li>Life Safety Systems Upgrade</li>
+                        <li>Lithotripter Department - New</li>
+                        <li>Master Facilities Upgrade</li>
+                        <li>MRI Addition and Renovation</li>
+                        <li>Neonatal Intensive Care Unit Remodel</li>
+                        <li>Nesset Renovation</li>
+                        <li>New Generator</li>
+                        <li>NICU Renovation</li>
+                        <li>OR Expansion</li>
+                        <li>Parkside Center - New</li>
+                        <li>Pediatric Emergency Suite</li>
+                        <li>Pediatric Intensive Care Unit Remodel</li>
+                        <li>SICU Expansion</li>
+                        <li>South Building Generator Upgrade</li>
+                        <li>Surgery Building Expansion</li>
+                        <li>West Parking Facility</li>
+                        <li>Yacktman Children's Pavilion - New</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Trinity Hospital<br><small>Chicago, IL</small></h2>
+                    <ul>
+                        <li>EISC</li>
+                        <li>New Chiller Plant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="descript">
+            <img src="../photos/healthcare/blank.gif" alt=".." style="height: 15px;">
+        </div>
+    </div>
+    <div class="drawer" id="carleInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Carle Foundation Hospital<br><small>Urbana, IL</small></h2>
+                <ul>
+                    <li>Main Hospital Campus</li>
+                    <li>Ambulatory Surgery Center</li>
+                    <li>Carle at the Fields
+                        <ul>
+                            <li>Specialty MOB</li>
+                            <li>Christie Clinic MOB</li>
+                        </ul>
+                    </li>
+                    <li>Curtis Clinic Expansion</li>
+                    <li>K-Tag Corrections</li>
+                    <li>One-Line Documentation</li>
+                    <li>Outpatient Facilities</li>
+                    <li>Sports Medicine</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="group" id="loyola">
+                <div class="back"></div>
+                <img src="../photos/healthcare/loyola-white.png" alt="Loyola Medicine">
+            </div></div>
+        <div class="col-sm-3">
+            <div class="group" id="childrens">
+                <div class="back"></div>
+                <img src="../photos/healthcare/lurie-white.png" alt="Lurie Children's Hospital">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="nch">
+                <div class="back"></div>
+                <img src="../photos/healthcare/nch-white.png" alt="Northwest Community Hospital">
+            </div></div>
+        <div class="col-sm-3">
+            <div class="group" id="northshore">
+                <div class="back"></div>
+                <img src="../photos/healthcare/northshore-white.png" alt="NorthShore">
+            </div></div>
+    </div>
+    <div class="drawer" id="loyolaInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Loyola Medical Center<br><small>Chicago, IL</small></h2>
+                <ul>
+                    <li>CT Scanner Remodel</li>
+                    <li>Outpatient Surgery</li>
+                </ul>
+            </div>
+            <div class="descript">
+                <h2>MacNeal Hospital<br><small>Berwyn, IL</small></h2>
+                <ul>
+                    <li>Linear Accelerator Addition</li>
+                </ul>
+            </div>
+            <div class="descript">
+                <h2>Palos Community Hospital<br><small>Palos Heights, IL</small></h2>
+                <ul>
+                    <li>Computer Communications Cabling Upgrade</li>
+                    <li>Data Processing Building</li>
+                    <li>Fiber Optics - Campus wide</li>
+                    <li>Nurse call System Upgrade - Campus wide</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="childrensInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Children's Hospital of Chicago<br><small>Chicago, IL</small></h2>
+                <p class="service">Service since 2004</p>
+                <ul>
+                    <li>Child Health Research</li>
+                    <li>Clark Street Building</li>
+                    <li>Deming Building</li>
+                    <li>Endoscopy Operating Rooms</li>
+                    <li>Fire Alarm System Replacement</li>
+                    <li>Fiber Cable Infrastructure</li>
+                    <li>IR Surgical lab</li>
+                    <li>Main Bedtower ComEd Vault Rework</li>
+                    <li>Radiology Equipment Replacements</li>
+                    <li>OR Equipment Modifications</li>
+                    <li>Outpatient Surgery Recovery Expansion</li>
+                    <li>Overhead Page Upgrade</li>
+                    <li>Westchester Rehab/Imaging Addition and Renovation</li>
+                    <li>Numerous Renovation Projects</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="nchInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Northwest Community Healthcare<br><small>Arlington Heights, IL</small></h2>
+                <ul>
+                    <li>240 Building Emergency Power</li>
+                    <li>259 E. Erie Emergency Power</li>
+                    <li>Fire Pump Emergency Feeder</li>
+                    <li>Psychiatric Unit Remodel</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="northshoreInfo">
+        <div class="mid">
+            <div class="descript">
+                <span>Photos (placeholder)</span>
+            </div>
+        </div>
+        <div class="drawer-split">
+            <div class="left">
+                <div class="descript">
+                    <h2>Glenbrook Hospital<br><small>Glenview, IL</small></h2>
+                    <p class="service">Service since 1995</p>
+                    <ul>
+                        <li>Cardiac Cath Equipment Replacement</li>
+                        <li>Central Plant Upgrades</li>
+                        <li>Chillers 1 & 2 Replacement</li>
+                        <li>Elevators 1-4 Modernization</li>
+                        <li>Epic System Phase 1</li>
+                        <li>Generator Upgrade</li>
+                        <li>ICU Expansion</li>
+                        <li>LIN ACC Remodel</li>
+                        <li>Medical Office Building (MOB)</li>
+                        <li>Security System Replacement</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Highland Park Hospital<br><small>Highland Park, IL</small></h2>
+                    <p class="service">Service since 2000</p>
+                    <ul>
+                        <li>Ambulatory Care Center - New</li>
+                        <li>Basement SWS Gear Replacement</li>
+                        <li>Cardiac Catheterization Lab Expansion</li>
+                        <li>Central Plant - New</li>
+                        <li>Computer Room Upgrade</li>
+                        <li>East Parking Structure</li>
+                        <li>ER Remodel</li>
+                        <li>Fire Alarm Replacement</li>
+                        <li>Lobby Remodel</li>
+                        <li>Master Planning</li>
+                        <li>Outpatient Treatment Center</li>
+                        <li>OR Cardiac Surgery Remodel</li>
+                        <li>PACS System</li>
+                        <li>Site Improvements</li>
+                        <li>Sonet Ring</li>
+                        <li>Southwest Parking Garage - New</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="descript">
+                    <h2>Evanston Hospital<br><small>Evanston, IL</small></h2>
+                    <p class="service">Service since 1990</p>
+                    <ul>
+                        <li>1301 Central Computer Room UPS Replacement</li>
+                        <li>1301 Central Generator and Service Upgrade</li>
+                        <li>Birl Building</li>
+                        <li>Burch Building</li>
+                        <li>Burch II Office & Research</li>
+                        <li>Campus Fire Alarm Upgrades</li>
+                        <li>Campus Improvements (Infrastructure)</li>
+                        <li>Cardiac Catheterization Expansion</li>
+                        <li>Computer Center & Offices "Forest City"</li>
+                        <li>Distribution Upgrade - Campus wide</li>
+                        <li>D&T Building</li>
+                        <li>Emergency Department</li>
+                        <li>Epic System Phase 1</li>
+                        <li>EWH Building</li>
+                        <li>Fire Alarm Upgrade</li>
+                        <li>Generator Upgrade</li>
+                        <li>Glenlake Medical Office Building</li>
+                        <li>Gurnee MOB 3rd Floor</li>
+                        <li>Kellogg Building</li>
+                        <li>Lincolnwood Medical Office Building</li>
+                        <li>McDougall Littel Building</li>
+                        <li>NMR Lab Remodel</li>
+                        <li>New Building - Vernon Hills, IL</li>
+                        <li>South Building</li>
+                        <li>Telephone System Redistribution</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="descript">
+            <img src="../photos/healthcare/blank.gif" alt="..." style="height: 15px;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="group" id="northwestern">
+                <div class="back"></div>
+                <img src="../photos/healthcare/northwestern-white.png" alt="NorthWestern Medicine">
+            </div></div>
+        <div class="col-sm-3">
+            <div class="group" id="presence">
+                <div class="back"></div>
+                <img src="../photos/healthcare/presence-white.png" alt="Preasence Health Care">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="rush">
+                <div class="back"></div>
+                <img src="../photos/healthcare/rush-white.gif" alt="Rush Hospital">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="uchicago">
+                <div class="back"></div>
+                <img src="../photos/healthcare/uchicago-white.png" alt="University of Chicago">
+            </div>
+        </div>
+
+    </div>
+    <div class="drawer" id="northwesternInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Lake Forest Hospital<br><small>Lake Forest, IL</small></h2>
+                <ul>
+                    <li>LDRP Renovation</li>
+                    <li>Surgery Building</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="presenceInfo">
+        <div class="mid">
+            <div class="descript">
+                <span>Photos (placeholder)</span>
+            </div>
+        </div>
+        <div class="drawer-split">
+            <div class="left">
+                <div class="descript">
+                    <h2>St Francis Hospital<br><small>Evanstron, IL</small></h2>
+                    <p class="service">Service since 1995</p>
+                    <ul>
+                        <li>Ambulatory Surgery</li>
+                        <li>Chapel</li>
+                        <li>Cardiology Unit & Open Heart</li>
+                        <li>Chiller Upgrade</li>
+                        <li>Convent Demolition</li>
+                        <li>C/T and MRI</li>
+                        <li>Doctors Lounge</li>
+                        <li>Fire Protection/Fire Alarm Replacement</li>
+                        <li>Infrastructure Master Plan</li>
+                        <li>Lobby & Gift Shop</li>
+                        <li>Normal/Essential Power Upgrade</li>
+                        <li>Obsetrics</li>
+                        <li>Patient Floor Renovations</li>
+                        <li>Telephone Replacement</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>St Joseph Hospital & Healthcare Center<br><small>Chicago, IL</small></h2>
+                    <ul>
+                        <li>4th Floor Women's and Children's Center</li>
+                        <li>Campus Nurse Call System Upgrade</li>
+                        <li>Data Center Renovation</li>
+                        <li>Fire Alarm System Replacement</li>
+                        <li>Fire Pump Upgrade</li>
+                        <li>Surgery Ventilation Upgrade</li>
+                        <li>TB Isolation Rooms</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Holy Family medical Center<br><small>Des Plaines, IL</small></h2>
+                    <p class="service">Service since 1985</p>
+                    <ul>
+                        <li>Second Floor Remodel</li>
+                        <li>Co-Generation Study</li>
+                        <li>Communication Networking System</li>
+                        <li>Emergency System Upgrade - Campus wide</li>
+                        <li>Fire Alarm Upgrade</li>
+                        <li>Fire Pump Upgrade</li>
+                        <li>Outdoor Medium Voltage Redistribution</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="descript">
+                    <h2>Resurrection Health Care Corp.<br><small>Chicago, IL</small></h2>
+                    <p class="service">Service since 1990</p>
+                    <ul>
+                        <li>Retirement Community Fire Alarm Upgrade</li>
+                        <li>St. Andrew's
+                            <ul>
+                            <li>Generator Replacement</li>
+                            <li>Fire Alarm Upgrade</li>
+                            <li>Dormitory Fire Pump</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Resurrection Medical Center<br><small>Chicago, IL</small></h2>
+                    <p class="service">Service since 19974</p>
+                    <ul>
+                        <li>Campus Site Work
+                        <ul>
+                            <li>Existing Switchgear Replacement</li>
+                            <li>Emergency Generator</li>
+                            <li>New Switchgear</li>
+                            <li>Site Lighting</li>
+                        </ul>
+                        </li>
+                        <li>Emergency Department Remodel</li>
+                        <li>Nurse Call Upgrade</li>
+                        <li>Patient Care Addition</li>
+                        <li>Professional Office Building and Tenant Build-out</li>
+                        <li>Skilled Nursing Home</li>
+                        <li>Surgery Expansion</li>
+                    </ul>
+                </div>
+                <div class="descript">
+                    <h2>Our Lady of Resurrection Hospital<br><small>Chicago, IL</small></h2>
+                    <ul>
+                        <li>Addison St. Garden</li>
+                        <li>Emergency System Upgrade</li>
+                        <li>Fire Pump Emergency Upgrade</li>
+                        <li>GI Lab</li>
+                        <li>MRI Replacement</li>
+                        <li>POB Lobby/Corridor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="descript">
+            <img src="../photos/healthcare/blank.gif" alt="..." style="height: 15px;">
+        </div>
+    </div>
+    <div class="drawer" id="rushInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Rush Copley Medical Center<br><small>Aurora, IL</small></h2>
+                <ul>
+                    <li>Medical Office Building</li>
+                    <li>Replacement Hospital</li>
+                </ul>
+            </div>
+            <div class="descript">
+                <h2>Rush North Shore Medical Center<br><small>Skokie, IL</small></h2>
+                <ul>
+                    <li>Cal-Devon Professional Office Building</li>
+                    <li>ER Dept Critical Power Upgrade</li>
+                    <li>Generator Upgrade</li>
+                    <li>Kenton Building</li>
+                    <li>Knox Building</li>
+                    <li>OR</li>
+                    <li>Payne Street Medical Office Building</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="uchicagoInfo">
+        <div class="mid">
+            <div class="descript"><span>Photos??? (placeholder)</span></div>
+        </div>
+        <div class="drawer-split">
+            <div class="left">
+                <div class="descript">
+                    <h2>Ingalls Health System<br><small>Harvey, IL</small></h2>
+                    <p class="service">Service since 1990</p>
+                    <ul>
+                        <li>Cafeteria</li>
+                        <li>Cancer Center Building</li>
+                        <li>Family Care Centers (Tinley Park and Calumet City, IL)</li>
+                        <li>Generator Replacement/Upgrade</li>
+                        <li>LDRP Renovation</li>
+                        <li>Open Heart Surgery</li>
+                        <li>Professional Office Building Addition</li>
+                        <li>Upgrade Boiler Plant</li>
+                        <li>Upgrade Domestic Hot Water Systems</li>
+                        <li>Upgrade East Bldg Chiller Plant</li>
+                        <li>Upgrade West Bldg Cooling Systems</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="descript">
+                    <h2>University of Chicago Hospitals<br><small>Chicago, IL</small></h2>
+                    <ul>
+                        <li>Data Center Building</li>
+                        <li>NICU Remodeling</li>
+                        <li>Pharmacy Robot</li>
+                        <li>Wyler Children's Hospital Remodel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="descript">
+            <img src="../photos/healthcare/blank.gif" alt="..." style="height: 15px;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="group" id="uic">
+                <div class="back"></div>
+                <img src="../photos/healthcare/uic-white.png" alt="UIC">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="westsuburban">
+                <div class="back"></div>
+                <img src="../photos/healthcare/westsuburban-white2.png" alt="West Suburban Medical Center">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="elmhurst">
+                <div class="back"></div>
+                <img src="../photos/healthcare/elmhurst-white.png" alt="Edward-Elmhurst Health Care">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="hines">
+                <div class="back"></div>
+                <img src="../photos/healthcare/hinesva-white.png" alt="Hines VA" >
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="uicInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>University of Illinois at Chicago<br><small>Chicago, IL</small></h2>
+                <ul>
+                    <li>Labor/Delivery Room</li>
+                    <li>Organ Transplant Unit Remodel</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="westsuburbanInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>West Suburban Medical Center<br><small>Oak Park, IL</small></h2>
+                <ul>
+                    <li>Cafeteria Infrastructure</li>
+                    <li>Cardiac Cath lab</li>
+                    <li>Chilled Water Distribution Upgrade</li>
+                    <li>Emergency Department</li>
+                    <li>Fire Alarm Upgrade</li>
+                    <li>Fire Protection</li>
+                    <li>GI Lab</li>
+                    <li>MRI Replacement</li>
+                    <li>New Emergency Generator</li>
+                    <li>Special Procedure Room</li>
+                    <li>WSCON Building Departmental Relocations</li>
+                </ul>
+            </div>
+            <div class="descript">
+                <h2>Westlake Hospital<br><small>Melrose Park, IL</small></h2>
+                <ul>
+                    <li>Basement Chiller Replacement</li>
+                    <li>Catheterization Lab Remodel</li>
+                    <li>Occupational Therapy</li>
+                    <li>Psych Ward Remodel</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="elmhurstInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Elmhurst Memorial Hospital<br><small>Elmhurst, IL</small></h2>
+                <ul>
+                    <li>Emergency Generator Upgrade</li>
+                    <li>Linear Accelerator</li>
+                    <li>MRI Replacement</li>
+                    <li>OR Power</li>
+                    <li>Risk Assessment Study</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="hinesInfo">
+        <div class="mid"><div class="descript">
+            <h2>Hines V.A. Hospital<br><small>Hines, IL</small></h2>
+            <ul>
+                <li>Chiller Replacement Feeder Upgrade</li>
+            </ul>
+        </div></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="group" id="kindred">
+                <div class="back"></div>
+                <img src="../photos/healthcare/kindred-white.png" alt="Kindred Health Care">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="mercy">
+                <div class="back"></div>
+                <img src="../photos/healthcare/mercy-white.png" alt="Mercy Hospital & Medical Center">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="rml">
+                <div class="back"></div>
+                <img src="../photos/healthcare/rml-white.png" alt="RML Specialty Hospital">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="shriners">
+                <div class="back"></div>
+                <img src="../photos/healthcare/shriners-white%20(2).png" alt="Shriners Hospital">
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="kindredInfo">
+        <div class="mid"><div class="descript">
+            <h2>Kindred Hospital<br><small>Chicago, IL</small></h2>
+            <ul>
+                <li>CT Scanner</li>
+                <li>Electrical System Improvement</li>
+                <li>Psychiatric Ward</li>
+                <li>Skilled Nursing Facility</li>
+            </ul>
+        </div></div>
+    </div>
+    <div class="drawer" id="mercyInfo">
+        <div class="mid"><div class="descript">
+            <h2>Mercy Hospital<br><small>Chicago, IL</small></h2>
+            <ul>
+                <li>Third Floor Birth Place</li>
+                <li>Cafeteria Remodel</li>
+                <li>ER Renovation</li>
+            </ul>
+        </div></div>
+    </div>
+    <div class="drawer" id="rmlInfo">
+        <div class="mid"><div class="descript">
+            <h2>RML Specialty Hospital<br><small>Hinsdale, IL</small></h2>
+            <p class="service">Service since 1992</p>
+            <ul>
+                <li>480V Service Upgrade</li>
+                <li>CT Scanner Addition</li>
+                <li>Emergency Power</li>
+                <li>master Plan Fire Protection</li>
+                <li>Nurser Call System Replacement</li>
+                <li>Unit Ventilator Remodel</li>
+                <li>Upgrade Electrical Service</li>
+                <li>Numerous Renovation Projects</li>
+            </ul>
+        </div></div>
+    </div>
+    <div class="drawer" id="shrinersInfo">
+        <div class="mid"><div class="descript">
+            <h2>Shriners Hospital<br><small>Chicago, IL</small></h2>
+            <ul><li>Gait Lab</li></ul>
+        </div></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="group" id="stanthony">
+                <div class="back"></div>
+                <img src="../photos/healthcare/stanthony-white.gif" alt="St Anthony Hospital">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="silvercross">
+                <div class="back"></div>
+                <img src="../photos/healthcare/silvercross-white2.png" alt="Silver Cross Hospital">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="group" id="columbus">
+                <div class="back"></div>
+                <img src="../photos/healthcare/columbus-white.png" alt="Columbus Hospital Chicago">
+            </div>
+        </div>
+        <div class="col-sm-3" style="background: #343a40;">
+        </div>
+    </div>
+    <div class="drawer" id="stanthonyInfo">
+        <div class="mid"><div class="descript">
+            <h2>St. Anthony Hospital<br><small>Chicago, IL</small></h2>
+            <ul>
+                <li>MRI Remodel</li>
+            </ul>
+        </div></div>
+    </div>
+    <div class="drawer" id="silvercrossInfo">
+        <div class="mid">
+            <div class="descript">
+                <h2>Silver Cross Hospital<br><small>Joliet, IL</small></h2>
+                <p class="service">Service since 1987</p>
+                <p>(Location Closed)</p>
+                <ul>
+                    <li>Ambulatory Building</li>
+                    <li>Chiller Replacement</li>
+                    <li>Emergency Department Addition</li>
+                    <li>Emergency Generator</li>
+                    <li>ER Dept Expansion</li>
+                    <li>Infrastructure Upgrade</li>
+                    <li>Medical Office Building</li>
+                    <li>Obstetrics Remodel</li>
+                    <li>Radiology Addition/Remodel</li>
+                    <li>South Campus Infrastructure</li>
+                    <li>Surgery Expansion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" id="columbusInfo">
+        <div class="mid"><div class="descript">
+            <h2>Columbus Hospital<br><small>Chicago, IL</small></h2>
+            <p>(Location Closed)</p>
+            <ul><li>Electrical System Assessment Study</li></ul>
+        </div></div>
+    </div>
+</div>
+
+<div id="bottomNav-placeholder"></div>
+<script>
+    //NOTE:
+    //  there are 46 hospitals currently listed in the health care tab...
+
+    $(function(){
+        $("#nav-placeholder").load("../templates/navbar.html");
+        $("#bottomNav-placeholder").load("../templates/bottomnav.html");
+    });
+
+    let $group = $('.group');
+
+    $group.hover(function(){
+        $(this).find('.back').css("filter", "grayscale(0) brightness(90%)");
+    }, function(){
+        $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+    });
+
+
+    $group.click(function(){
+        let $activeDrawer = $('.drawer.active');
+        if($('.drawer.active:first').is(":visible")){
+            $activeDrawer.slideUp("slow").removeClass("active");
+        }
+        $activeDrawer.removeClass("active");
+        let h = $(this).attr("id");
+        if($('#'+h+'Info:first').is(":hidden")) {
+            $(this).find('.back').css("filter", "grayscale(0) brightness(90%)");
+            $('#' + h + 'Info').slideDown("slow").addClass("active");
+        } else{
+            $('#' + h + 'Info').slideUp("slow").removeClass("active");
+            $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+        }
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dickerson Engineering, Inc.</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <script src="../jQuery/jquery.mask.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <style>
+        span.item-header{font-weight: bold; font-size: 20px;}
+        #contactUs{top: 0;}
+    </style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="page-title">
+    <h1>CONTACT <small>& DIRECTIONS</small></h1>
+</div>
+
+<div class="row" style="padding: 0 70px;">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 300px;"
+        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=3343+North+Ridge+Avenue+Arlington+Heights,+IL+60004&amp;ie=UTF8&amp;hq=&amp;hnear=3343+N+Ridge+Ave,+Arlington+Heights,+Illinois+60004&amp;t=m&amp;spn=0.019125,0.072098&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=3343+North+Ridge+Avenue+Arlington+Heights,+IL+60004&amp;aq=&amp;sspn=18.708544,30.410156&amp;ie=UTF8&amp;hq=&amp;hnear=3343+N+Ridge+Ave,+Arlington+Heights,+Illinois+60004&amp;t=m&amp;spn=0.019125,0.072098&amp;z=14&amp;iwloc=A" >View Larger Map</a>
+        </small>
+</div>
+<div class="row">
+    <div class="col" style="padding-left: 70px;">
+        <span class="item-header">ADDRESS</span>
+        <p>Dickerson Engineering, Inc.<br>3343 North Ridge Ave.<br>Arlington Heights, IL  60004</p>
+        <span class="item-header">HOURS</span>
+        <p>Monday - Friday<br>7:30AM - 4:30PM CT</p>
+
+    </div>
+    <div class="col" style="padding-right: 70px;">
+        <span class="item-header">FTP/WEB FILE TRANSFERS: </span><br>
+        <span><i>For FTP Access:</i> <a href="ftp://ftp.dickersonengineering.com">fttp://ftp.dickersonengineering.com</a></span><br>
+        <span><i>For web access:</i> <a href="http://www.dickersonengineering.com/filearchive">www.dickersonengineering.com/filearchive</a></span><br><br>
+        <span>Please contact the project manager at DEI for your project to obtain login information.</span>
+    </div>
+</div>
+<div class="container-fluid" id="contactUs">
+    <div class="row">
+        <div class="col-md">
+            <h2>Feel free to give us a call or reach out via email!</h2>
+            <hr>
+            <span class="item-header">PHONE</span>
+            <span>(847) 966-0290</span><br>
+            <span class="item-header">FAX</span>
+            <span>(847) 966-0294</span><br>
+            <span class="item-header">EMAIL</span>
+            <span><a href="mailto:info@dei-pe.com">info@dei-pe.com</a></span><br>
+            <span class="item-header">HR</span>
+            <span><a href="mailto:hr@dei-pe.com">hr@dei-pe.com</a></span>
+        </div>
+        <div class="col-md" id="formContainer">
+            <form action="#" method="get" id="contactForm">
+                <input type="text" placeholder="Full Name" class="form-control" ><br>
+                <input type="email" placeholder="Email" class="form-control"><br>
+                <input type="text" placeholder="Phone" class="form-control"><br>
+                <textarea placeholder="Comments" class="form-control" rows="5"></textarea><br>
+                <input type="submit" value="SUBMIT" class="btn btn-primary" style="font-weight: bold;">
+            </form>
+        </div>
+    </div>
+</div>
+<div id="bottomNav-placeholder"></div>
+</body>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("../templates/navbar.html");
+        $("#bottomNav-placeholder").load("../templates/bottomnav.html");
+    });
+</script>
+</html>
