@@ -11,6 +11,7 @@
     <script src="../jQuery/jquery.mask.js"></script>
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/main.js"></script>
     <style>
         body{overflow-x: hidden; }
         .page{height: 50vh;}
@@ -18,9 +19,10 @@
         .front{display: block; position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); color: #fcf7f8; text-align: center;}
         .front button{color: white; border-color: white; background: transparent; transition: all 0.3s ease-in-out;}
         .front button:hover{color: white; background: rgba(231,84,87,0.77);}
-        .info{display: none; max-height: 50vh; color: #fcf7f8; background: #323031; flex-flow: wrap column;}
+        .info{display: none; max-height: 50vh; color: #fcf7f8; background: #323031; flex-flow: wrap column; padding-top: 10px;}
         .hideCol{display: none;}
         .info ul{display: flex; flex-flow: wrap column; max-height: 50vh;}
+        span.liTitle{font-size: 18px; font-weight: bold;}
         /* ul.outer li{float: left; width: 30%;} */
 
     </style>
@@ -35,57 +37,53 @@
 <!--        <div class="back"></div>-->
         <div class="front">
             <h2>Elementary Schools</h2>
-            <button class="btn infoShow" id="elementaryBtn">Explore</button>
+            <button class="btn infoShow explr" id="elementaryBtn">Explore</button>
         </div>
     </div>
     <div class="side-drawer col-md-9 info" id="elementaryInfo">
         <ul class="outer">
-            <li>District #36
-                <ul><li>Winnetka (Winnetka, IL)</li></ul>
+            <li><span class="liTitle">District #36</span><br>Winnetka, IL
+                <ul><li>Winnetka</li></ul>
             </li>
-            <li>District #35
-                <ul><li>Glencoe (Glencoe, IL)</li></ul>
+            <li><span class="liTitle">District #35</span><br>Glencoe, IL
+                <ul><li>Glencoe</li></ul>
             </li>
-            <li>District #46
-                <ul><li>Garfield (Elgin, IL)</li>
-                <li>McKinley (Elgin, IL)</li>
-                <li>Washington (Elgin, IL)</li></ul>
+            <li><span class="liTitle">District #46</span><br>Elgin, IL
+                <ul><li>Garfield</li>
+                <li>McKinley</li>
+                <li>Washington</li></ul>
             </li>
-            <li>District #59
-                <ul><li>Devonshire (Elk Grove, IL)</li>
-                <li>Grove (Elk Grove, IL)</li>
-                <li>Rupley (Elk Grove, IL)</li>
-                <li>Clearmont (Elk Grove, IL)</li>
+            <li><span class="liTitle">District #59</span><br>Elk Grove, IL
+                <ul><li>Devonshire</li>
+                <li>Grove</li>
+                <li>Rupley</li>
+                <li>Clearmont</li>
                 </ul>
             </li>
-            <li>District #64
+            <li><span class="liTitle">District #64</span><br>Park Ridge, IL
             <ul>
-                <li>Carpenter (Park Ridge, IL)</li>
-                <li>Franklin (Park Ridge, IL)</li>
-                <li>Washington (Park Ridge, IL)</li>
+                <li>Carpenter</li>
+                <li>Franklin</li>
+                <li>Washington</li>
             </ul>
             </li>
-            <li>District #74
+            <li><span class="liTitle">District #74</span><br>Lincolnshire, IL
             <ul>
-                <li>Todd (Lincolnshire, IL)</li>
+                <li>Todd</li>
             </ul>
             </li>
-            <li>District #107
+            <li><span class="liTitle">District #107</span><br>Highland Park, IL
             <ul>
-                <li>Indian Trails (Highland Park, IL)</li>
+                <li>Indian Trails</li>
             </ul>
             </li>
-            <li>District #155
+            <li><span class="liTitle">District #155/#156</span><br>Calumet City, IL
             <ul>
-                <li>Wilson (Calumet City, IL)</li>
+                <li>Wilson</li>
+                <li>Lincoln</li>
             </ul>
             </li>
-            <li>District #156
-            <ul>
-                <li>Lincoln (Calumet City, IL)</li>
-            </ul>
-            </li>
-            <li>District #300
+            <li><span class="liTitle">District #300</span>
             <ul>
                 <li>Neubert (Algonquin, IL)</li>
                 <li>Sleepy Hollow (Sleepy Hollow, IL)</li>
@@ -96,40 +94,40 @@
     <div class="col-md explore active" style="background: #d3ced6;" id="middle">
         <div class="front">
             <h2>Middle Schools</h2>
-            <button class="btn infoShow" id="middleBtn">Explore</button>
+            <button class="btn infoShow explr" id="middleBtn">Explore</button>
         </div>
     </div>
-    <div class="side-drawer col-md-9 info" id="elementaryInfo">
+    <div class="side-drawer col-md-9 info" id="middleInfo">
         <ul class="outer">
-            <li>District #25
+            <li><span class="liTitle">District #25</span><br>Arlington Heights, IL
                 <ul>
-                    <li>Miner (Arlington Heights, IL)</li>
-                    <li>South (Arlington Heights, IL)</li>
+                    <li>Miner</li>
+                    <li>South</li>
                 </ul>
             </li>
-            <li>District #59
+            <li><span class="liTitle">District #59</span>
                 <ul>
                     <li>Friendship (Des Plaines, IL)</li>
                     <li>Holmes (Mt. Prospect, IL)</li>
                     <li>Ridge (Elk Groce, IL)</li>
                 </ul>
             </li>
-            <li>District #64
+            <li><span class="liTitle">District #64</span>
                 <ul><li>Lincoln (Park Ridge, IL)</li></ul>
             </li>
-            <li>District #73
-                <ul><li>East Prarie (Skokie, IL)</li></ul>
+            <li><span class="liTitle">District #73</span><br>Skokie, IL
+                <ul><li>East Prarie</li></ul>
             </li>
-            <li>District #74
+            <li><span class="liTitle">District #74</span><br>Lincolnwood, IL
                 <ul>
-                    <li>Lincoln (Lincolnwood, IL)</li>
-                    <li>Rutledge (Lincolnwood, IL)</li>
+                    <li>Lincoln</li>
+                    <li>Rutledge</li>
                 </ul>
             </li>
-            <li>District #202
+            <li><span class="liTitle">District #202</span><br>Lisle, IL
                 <ul>
-                    <li>Lisle (Lisle, IL)</li>
-                    <li>Tate-Wood (Lisle, IL)</li>
+                    <li>Lisle</li>
+                    <li>Tate-Wood</li>
                 </ul>
             </li>
         </ul>
@@ -137,39 +135,110 @@
     <div class="col-md explore active" style="background: #7171a0;" id="high">
         <div class="front">
             <h2>High Schools</h2>
-            <button class="btn infoShow" id="highBtn">Explore</button>
+            <button class="btn infoShow explr" id="highBtn">Explore</button>
         </div>
+    </div>
+    <div class="side-drawer col-md-9 info" id="highInfo">
+        <ul class="outer">
+            <li><span class="liTitle">District #86</span><br>Hinsdale, IL
+                <ul>
+                    <li>Hinsdale Central</li>
+                    <li>Hinsdale South</li>
+                </ul>
+            </li>
+            <li><span class="liTitle">District #125</span><br>Prairie View, IL
+                <ul><li>Stevenson</li></ul>
+            </li>
+            <li><span class="liTitle">District #202</span><br>Lisle, IL
+                <ul><li>Lisle</li></ul>
+            </li>
+            <li><span class="liTitle">District #214</span><br>Buffalo Grove, IL
+                <ul><li>Buffalo Grove</li></ul>
+            </li>
+            <li><span class="liTitle">District #225</span><br>Northbrooke, IL
+                <ul><li>Glenbrook North</li></ul>
+            </li>
+            <li><span class="liTitle">District #230</span>
+                <ul>
+                    <li>Sandburg (Orland Park, IL)</li>
+                    <li>Andrew (Tinley Park, IL)</li>
+                </ul>
+            </li>
+            <li><span class="liTitle">District #231</span>
+                <ul>
+                    <li>Everygreen Park (Everygreen Park, IL)</li>
+                    <li>Rochelle (Rochelle, IL)</li>
+                </ul>
+            </li>
+            <li><span class="liTitle">District #303</span>
+                <ul>
+                    <li>St. Charles (St. Charles, IL)</li>
+                    <li>De La Salle (Chicago Archdiocese)</li>
+                    <li>St. Patrick's High School (Chicago, IL)</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="row page">
-    <div class="col-md" id="university" style="background: #5b4c73;">
+    <div class="col-md explore active" id="university" style="background: #5b4c73;">
         <div class="front">
             <h2>Universities</h2>
-            <button class="btn infoShow" id="universityBtn">Explore</button>
-        </div></div>
-    <div class="col-md" id="institution" style="background: #323031;">
-        <div class="front">
-            <h2>Institutional Facilities</h2>
-            <button class="btn infoShow" id="institutionBtn">Explore</button>
+            <button class="btn infoShow explr" id="universityBtn">Explore</button>
         </div>
     </div>
-    <div class="col-md" id="instMisc" style="background: #343a40;">
+    <div class="side-drawer col-md-9 info" id="universityInfo">
+        <ul class="outer">
+            <li>Benedictine College (Lisle, IL)</li>
+            <li>Chicago State University (Chicago, IL)</li>
+            <li>Columbia College (Chicago, IL)</li>
+            <li>Lake Forest College (Lake Forest, IL)</li>
+            <li>Loyola University (Chicago, IL)</li>
+            <li>Midwestern University (Downers Grove, IL)</li>
+            <li>National Louis University (Wheaton, IL)</li>
+            <li>North Park University (Chicago, IL)</li>
+            <li>Northwestern University (Evanston, IL)</li>
+            <li>Oakton Community College (Des Plaines, IL)</li>
+        </ul>
+    </div>
+    <div class="col-md explore active" id="institution" style="background: #323031;">
+        <div class="front">
+            <h2>Institutional Facilities</h2>
+            <button class="btn infoShow explr" id="institutionBtn">Explore</button>
+        </div>
+    </div>
+    <div class="side-drawer col-md-9 info" id="institutionInfo">
+        <ul class="outer">
+            <li>Allstate Child Care Center (Norhtbrook, IL)</li>
+            <li>Croya Youth Organization (Lake Forest, IL)</li>
+            <li>Early Childhood Development Center (Waukegan, IL)</li>
+            <li>The Family Institute (Evanston, IL)</li>
+            <li>Lake Forest Academy (Lake Forest, IL)</li>
+            <li>Maryville Career Center (Des Plaines, IL)</li>
+            <li>Northern Suburban Special Education (Highland Park, IL)</li>
+            <li>Scottish Home (North Riverside, IL)</li>
+            <li>Winnetka Public Nursery (Winnetka, IL)</li>
+        </ul>
+    </div>
+    <div class="col-md explore active" id="instMisc" style="background: #343a40;">
         <div class="front">
             <h2>Miscellaneous</h2>
-            <button class="btn infoShow" id="instMiscBtn">Explore</button>
+            <button class="btn infoShow explr" id="instMiscBtn">Explore</button>
         </div>
+    </div>
+    <div class="side-drawer col-md-9 info" id="instMiscInfo">
+        <ul class="outer">
+            <li>Aveda School of Cosmetology (Chicago, IL)</li>
+        </ul>
     </div>
 </div>
 
 
 <div id="bottomNav-placeholder"></div>
 <script>
-    $(function(){
-        $("#nav-placeholder").load("../templates/navbar.html");
-        $("#bottomNav-placeholder").load("../templates/bottomnav.html");
-    });
 
-    $('#elementaryBtn').click(function(){
+
+    $('button.explr').click(function(){
         let mid = this.id;      //id as a string?
         mid = mid.substr(0, mid.length-3);
         let $explore = $(this).closest('.explore');    //div col on top of button
