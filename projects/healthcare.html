@@ -15,22 +15,15 @@
     <style>
         body{overflow-x: hidden; background: #343a40;}
 
-        #proj1 div.row{height: 50vh;}
-        #proj1 >.row > div.col-sm-3{padding: 0;}
-
         .drawer-split{display: block; height: auto; width: 100%;}
         .left, .right{display: block; width: 48%; }
         .left{padding-left: 15px; float: left;}
         .right{float: right;}
         .mid{ margin: auto; display: block; width: 75%;}
-        div.back{filter: brightness(40%) grayscale(80%); width: 100%; height: 100%; z-index: -5; position: relative; top: 0;
-            right: 0; background-position: center; transition: all 0.5s ease-in-out; background-size: cover;}
 
         .carousel{max-height: 700px;}
         .carousel-inner{max-height: 700px;}
         .carousel-inner > .item >img{margin: auto;}
-
-
     </style>
 </head>
 <body>
@@ -973,38 +966,31 @@
 
 <div id="bottomNav-placeholder"></div>
 <script>
-    //NOTE:
-    //  there are 46 hospitals currently listed in the health care tab...
 
-    $(function(){
-        $("#nav-placeholder").load("../templates/navbar.html");
-        $("#bottomNav-placeholder").load("../templates/bottomnav.html");
-    });
-
-    let $group = $('.group');
-
-    $group.hover(function(){
-        $(this).find('.back').css("filter", "brightness(90%) grayscale(0)");
+    // let $group = $('.group');
+    $('.group').hover(function(){
+    $(this).find('.back').css("filter", "brightness(90%) grayscale(0)");
     }, function(){
         $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
     });
 
+$('.group').click(function(){
+    let $activeDrawer = $('.drawer.active');
+    if($('.drawer.active:first').is(":visible")){
+        $activeDrawer.slideUp("slow").removeClass("active");
+    }
+    $activeDrawer.removeClass("active");
+    let h = $(this).attr("id");
+    if($('#'+h+'Info:first').is(":hidden")) {
+        $(this).find('.back').css("filter", "brightness(90%) grayscale(0) ");
+        $('#' + h + 'Info').slideDown("slow").addClass("active");
+    } else{
+        $('#' + h + 'Info').slideUp("slow").removeClass("active");
+        $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+    }
+});
 
-    $group.click(function(){
-        let $activeDrawer = $('.drawer.active');
-        if($('.drawer.active:first').is(":visible")){
-            $activeDrawer.slideUp("slow").removeClass("active");
-        }
-        $activeDrawer.removeClass("active");
-        let h = $(this).attr("id");
-        if($('#'+h+'Info:first').is(":hidden")) {
-            $(this).find('.back').css("filter", "brightness(90%) grayscale(0) ");
-            $('#' + h + 'Info').slideDown("slow").addClass("active");
-        } else{
-            $('#' + h + 'Info').slideUp("slow").removeClass("active");
-            $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
-        }
-    })
+
 
 </script>
 </body>

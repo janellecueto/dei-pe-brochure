@@ -55,7 +55,7 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 /****** Projects tab styling ******/
 .back{filter: brightness(40%) grayscale(80%); width: 100%; height: 100%; z-index: -5; position: relative; top: 0;
     right: 0; background-position: center; transition: all 0.5s ease-in-out;}
-    
+
 .mtext{margin: auto; color: white; filter: none; position: relative; top: calc(-50% - 30px);}
 .mtext button{display: none; color: white; border-color: white; background: transparent; transition: all 0.3s ease-in-out;}
 .mtext button:hover{color: white; background: rgba(231,84,87,0.77);}
@@ -76,6 +76,9 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 }
 .descript{padding: 10px;}
 .descript img{width: 100%;}
+
+#proj1 div.row{height: 50vh;}
+#proj1 >.row > div.col-sm-3{padding: 0;}
 
 #amita div.back{background-image: url("../photos/healthcare/St Alexius 3.JPG"); }
 #adventHealth div.back{background-image: url("../photos/healthcare/munroe.JPG"); }

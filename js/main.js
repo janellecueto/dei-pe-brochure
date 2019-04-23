@@ -34,4 +34,4 @@ $(".sec").hover(function(){
      $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
      $(this).find(".mtext button").hide();
  });
- 
+
