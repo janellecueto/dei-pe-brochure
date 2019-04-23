@@ -35,7 +35,7 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 #services a{margin: auto; background: transparent; border: 2px solid white;}
 #services a:hover{background: white; color: #5b4c73;}
 
-/******** About/Staff *********/
+/******** About/Staff tab *********/
 .profile{text-align: center;}
 .profile img{width: 80%;}
 .bio{display: block; width: 80%; margin: auto;}
@@ -116,6 +116,7 @@ p.service{color: #e75457;}
     .carousel-item img{height: 250px; width: auto;}
     #dei img{height: 40vw;}
     #services hr{display: none;}
+    #about{padding: 0 30px; top: 0;}
 }
     /******* Profile pictures on About/Staff ***********/
 @media screen and (max-width: 768px){
@@ -131,4 +132,8 @@ p.service{color: #e75457;}
     .page-title{padding: 15px;}
     .group img{display: block; position: center; max-height: 80%; width: auto; max-width: 90%; margin: auto;
         transform: translateY(-50%) translateX(-50%);}
+        #bottomAddr{display: none;}
+    .roleDiv{padding: 0 30px; text-align: center;}
+    .roleDiv h3{font-size: 32px;}
+    .bio h2{font-size: 28px;}
 }
