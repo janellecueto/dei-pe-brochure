@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dickerson Engineering, Inc.</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
-    <script src="../jQuery/jquery-3.3.1.js"></script>
-    <script src="../jQuery/jquery.mask.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/bootstrap.js"></script>
+
     <style>
 
         body{background-color: #d3ced6;}
@@ -19,7 +14,50 @@
     </style>
 </head>
 <body>
-<div id="nav-placeholder"></div>
+<!-- <div id="nav-placeholder"></div> -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">DEI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav"
+            aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdwn">
+                <a class="nav-link active" href="../about" id="nav-about">ABOUT</a>
+                <div class="dropdwn-content">
+                    <a href="../about">The Company</a>
+                    <a href="../about/staff.html">The Staff</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../services" id="nav-services">SERVICES</a>
+            </li>
+            <li class="nav-item dropdwn">
+                <a class="nav-link" href="../projects" id="navbarDropdown">PROJECTS</a>
+                <div class="dropdwn-content">
+                    <a href="../projects/healthcare.html">Health Care</a>
+                    <a href="../projects/institutional.html">Educational/Institutional</a>
+                    <a href="../projects/recreational.html">Recreational/Municipal/Government</a>
+                    <a href="../projects/misc.html">Miscellaneous</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../clients" id="nav-clients">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="portalLink">PORTAL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../contact" id="contactLink">CONTACT US</a>
+            </li>
+        </ul>
+        <span class="navbar-text" style="font-size: 18px;">(847) 966-0290</span>
+    </div>
+</nav>
 <div class="page-title">
     <h1>ABOUT <small>THE STAFF</small></h1>
 </div>
@@ -210,12 +248,14 @@
 </div>
 
 <div id="bottomNav-placeholder"></div>
+<script src="../jQuery/jquery-3.3.1.js"></script>
+<script src="../jQuery/jquery.mask.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
 <script>
     $(function(){
-        $("#nav-placeholder").load("../templates/navbar.html");
         $("#bottomNav-placeholder").load("../templates/bottomnav.html");
     });
-
+    
 </script>
 </body>
 </html>
