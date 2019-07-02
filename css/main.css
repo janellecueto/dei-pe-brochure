@@ -79,6 +79,16 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 
 #proj1 div.row{height: 50vh;}
 #proj1 >.row > div.col-sm-3{padding: 0;}
+#proj1 >.row > div.col-sm-4{padding: 0;}
+
+#project-popover .modal-content{
+    background-color:#343a40;
+    color: white;
+}
+#project-popover .info-popover{
+    padding: 10px;
+    display: none;
+} 
 
 #amita div.back{background-image: url("../photos/healthcare/St Alexius 3.JPG"); }
 #adventHealth div.back{background-image: url("../photos/healthcare/munroe.JPG"); }
@@ -103,6 +113,13 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 #stanthony div.back{background: url("../photos/healthcare/stanthony-h2.jpg");}
 #westsuburban div.back{background: url("../photos/healthcare/westsuburban-h2.png");}
 #columbus div.back{background: url("../photos/healthcare/columbus-h.jpg");}
+
+#elementary div.back{background: url("../photos/institutional/elementary.jpg");}
+#middle div.back{background: url("../photos/institutional/middle.jpg"); background-size: cover;}
+#high div.back{background: url("../photos/institutional/high.jpg"); background-size: cover;}
+#university div.back{background: url("../photos/institutional/university.jpg");}
+#institutional div.back{background: url("../photos/institutional/institutional.jpg"); background-size: cover;}
+#instMisc div.back{background: url("../photos/institutional/misc.JPG"); background-size: cover;}
 
 /****** General Styling ******/
 h1{font-size: 5vw;}
