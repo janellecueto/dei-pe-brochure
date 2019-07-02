@@ -17,6 +17,28 @@
         .carousel{max-height: 700px;}
         .carousel-inner{max-height: 700px;}
         .carousel-inner > .item >img{margin: auto;}
+
+        /* #project-popover{
+            position: absolute;
+            top: calc(50% + 50px);
+            left: 50%;
+            height: calc(100vh - 48px);
+            width: 100vw;
+            display: none;
+            padding: 10px;
+            overflow-y: auto;
+            background: #343a40;
+            color: white;
+            transform: translateX(-50%) translateY(-50%);
+        } */
+        #project-popover .modal-content{
+            background-color:#343a40;
+            color: white;
+        }
+        #project-popover .info-popover{
+            padding: 10px;
+            display: none;
+        } 
     </style>
 </head>
 <body>
@@ -998,6 +1020,541 @@
         </div></div>
     </div>
 </div>
+<div class="modal fade" tabindex="-1" role="dialog" id="project-popover">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Projects | Health Care</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="info-popover" id="adventHealthMini">
+                    <h4>Florida Hospital Ocala<br><small>Ocala, FL</small></h4>
+                    <p>(Formerly Munroe Regional Medical Center)</p>
+                    <ul>
+                        <li>New Data Center - Off Site</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="amitaMini">
+                    <h4>Alexian Brothers Medical Center<br><small> Elk Grove, IL</small></h4>
+                    <p class="service">Service since 1992</p>
+                    <ul>
+                        <li>Bed Tower and Medical Mall</li>
+                        <li>Cath Lab Expansion/PIR</li>
+                        <li>Chapel</li>
+                        <li>Cooling Tower Replacement</li>
+                        <li>Distribution Upgrade - Campus wide</li>
+                        <li>Electric Service & Generator Improvements</li>
+                        <li>Fire Alarm Upgrade - Campus wide</li>
+                        <li>ICU Expansion</li>
+                        <li>Infrastructure Master Plan</li>
+                        <li>MRI Expansion</li>
+                        <li>Open Heart Surgery Addition</li>
+                        <li>Operating Room Expansion</li>
+                        <li>Parking Structure Expansion</li>
+                        <li>Patient Tower Infrastructure</li>
+                        <li>Pediatric Emergency Department Expansion</li>
+                        <li>PET/CT Scanner Replacement</li>
+                        <li>Rehab Hospital Addition</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>Adventist Medical Center Hinsdale<br><small>Hinsdale, IL</small></h4>
+                    <p class="service">Service since 1975</p>
+                    <ul>
+                        <li>CCU Replacement</li>
+                        <li>Distribution Upgrade - Campus wide</li>
+                        <li>DuPage Imaging Rad Room</li>
+                        <li>Emergency Generator Upgrade</li>
+                        <li>ER Remodel & Expansion</li>
+                        <li>Grant Square Ct</li>
+                        <li>ICU Remodel</li>
+                        <li>LDR Remodel</li>
+                        <li>North Building Infrastructure Improvements</li>
+                        <li>Open Heart Surgery</li>
+                        <li>Patient Pavilion</li>
+                        <li>Surgery Department - New</li>
+                        <li>Women's/Children Center</li>
+                        <li>UPS Upgrade</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>Adventist Medical Center LaGrange<br><small>LaGrange, IL</small></h4>
+                    <ul>
+                        <li>Family Practice</li>
+                        <li>Physical Therapy Suite</li>
+                        <li>Radiology Remodel</li>
+                    </ul>
+                    <h4>Glen Oaks Hospital<br><small>Lombard, IL</small></h4>
+                    <ul>
+                        <li>Emergency Power Systems Separation</li>
+                    </ul>
+                    <h4>St. Alexius Medical Center<br><small>Hoffman Estates, IL</small></h4>
+                    <ul>
+                        <li>2nd Floor LDR Renovation</li>
+                        <li>6th Floor OT/PT</li>
+                        <li>Cath Lab</li>
+                        <li>Central Plant</li>
+                        <li>Generator Replacement</li>
+                        <li>MRI & C/T</li>
+                        <li>Pathology Lab</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="advocateMini">
+                    <h4>Christ Medical Center<br><small>Oak Lawn, IL</small></h4>
+                    <ul>
+                        <li>Chiller Plant Study</li>
+                        <li>Master Planning</li>
+                        <li>Outpatient Pavilion</li>
+                        <li>VISICU</li>
+                    </ul>
+                    <h4>Condell Memorial Hospital<br><small>Libertyville, IL</small></h4>
+                    <ul>
+                        <li>CT Scan</li>
+                        <li>Day Care Center - New</li>
+                        <li>Fitness Center - New</li>
+                        <li>Fluoroscopy Equipment Replacement</li>
+                        <li>Surgery Unit Addition</li>
+                    </ul>
+                    <h4>Good Samaritan Hospital<br><small>Downers Grove, IL</small></h4>
+                    <ul>
+                        <li>5th Floor Physical Therapy Remodel</li>
+                        <li>Cooling Plant Upgrade</li>
+                        <li>Generator Replacement</li>
+                    </ul>
+                    <h4>Good Shepherd Hospital<br><small>Barrington, IL</small></h4>
+                    <p class="service">Service since 2003</p>
+                    <ul>
+                        <li>Ambulatory Care Addition</li>
+                        <li>Cooling Plant Upgrade</li>
+                        <li>Domestic Cold Water System Upgrade</li>
+                        <li>Emergency Generator Upgrade</li>
+                        <li>Emergency Power Upgrade</li>
+                        <li>Emergency Room Addition</li>
+                        <li>North Addition Cardiac Cath</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>Lutheran General Hospital<br><small>Park Ridge, IL</small></h4>
+                    <p class="service">Service since 1980</p>
+                    <ul>
+                        <li>Bed Replacement Tower</li>
+                        <li>Cancer Care Center Remodel</li>
+                        <li>Cancer Center Expansion</li>
+                        <li>Chilled Water Plant - Nessett Pavilion</li>
+                        <li>Computer Department Infrastructure</li>
+                        <li>Computer Room Electrical Service, Generator, and UPS System Upgrade</li>
+                        <li>Emergency Department Remodel</li>
+                        <li>Infrastructure Upgrade</li>
+                        <li>LDR Renovation/Expansion</li>
+                        <li>Life Safety Systems Upgrade</li>
+                        <li>Lithotripter Department - New</li>
+                        <li>Master Facilities Upgrade</li>
+                        <li>MRI Addition and Renovation</li>
+                        <li>Neonatal Intensive Care Unit Remodel</li>
+                        <li>Nesset Renovation</li>
+                        <li>New Generator</li>
+                        <li>NICU Renovation</li>
+                        <li>OR Expansion</li>
+                        <li>Parkside Center - New</li>
+                        <li>Pediatric Emergency Suite</li>
+                        <li>Pediatric Intensive Care Unit Remodel</li>
+                        <li>SICU Expansion</li>
+                        <li>South Building Generator Upgrade</li>
+                        <li>Surgery Building Expansion</li>
+                        <li>West Parking Facility</li>
+                        <li>Yacktman Children's Pavilion - New</li>
+                    </ul>
+                    <h4>Trinity Hospital<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>EISC</li>
+                        <li>New Chiller Plant</li>
+                    </ul>
+                    <h4>Bethany Hospital<br><small>Chicago, IL</small></h4>
+                    <p>(Closed)</p>
+                    <ul>
+                        <li>EISCU</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="carleMini">
+                    <h4>Carle Foundation Hospital<br><small>Urbana, IL</small></h4>
+                    <ul>
+                        <li>Main Hospital Campus</li>
+                        <li>Ambulatory Surgery Center</li>
+                        <li>Carle at the Fields
+                            <ul>
+                                <li>Specialty MOB</li>
+                                <li>Christie Clinic MOB</li>
+                            </ul>
+                        </li>
+                        <li>Curtis Clinic Expansion</li>
+                        <li>K-Tag Corrections</li>
+                        <li>One-Line Documentation</li>
+                        <li>Outpatient Facilities</li>
+                        <li>Sports Medicine</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="loyolaMini">
+                    <h4>Loyola Medical Center<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>CT Scanner Remodel</li>
+                        <li>Outpatient Surgery</li>
+                    </ul>
+                    <h4>MacNeal Hospital<br><small>Berwyn, IL</small></h4>
+                    <ul>
+                        <li>Linear Accelerator Addition</li>
+                    </ul>
+                    <h4>Palos Community Hospital<br><small>Palos Heights, IL</small></h4>
+                    <ul>
+                        <li>Computer Communications Cabling Upgrade</li>
+                        <li>Data Processing Building</li>
+                        <li>Fiber Optics - Campus wide</li>
+                        <li>Nurse call System Upgrade - Campus wide</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="childrensMini">
+                    <h4>Children's Hospital of Chicago<br><small>Chicago, IL</small></h4>
+                    <p class="service">Service since 2004</p>
+                    <ul>
+                        <li>Child Health Research</li>
+                        <li>Clark Street Building</li>
+                        <li>Deming Building</li>
+                        <li>Endoscopy Operating Rooms</li>
+                        <li>Fire Alarm System Replacement</li>
+                        <li>Fiber Cable Infrastructure</li>
+                        <li>IR Surgical lab</li>
+                        <li>Main Bedtower ComEd Vault Rework</li>
+                        <li>Radiology Equipment Replacements</li>
+                        <li>OR Equipment Modifications</li>
+                        <li>Outpatient Surgery Recovery Expansion</li>
+                        <li>Overhead Page Upgrade</li>
+                        <li>Westchester Rehab/Imaging Addition and Renovation</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="nchMini">
+                    <h4>Northwest Community Healthcare<br><small>Arlington Heights, IL</small></h4>
+                    <ul>
+                        <li>240 Building Emergency Power</li>
+                        <li>259 E. Erie Emergency Power</li>
+                        <li>Fire Pump Emergency Feeder</li>
+                        <li>Psychiatric Unit Remodel</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="northshoreMini">
+                    <h4>Evanston Hospital<br><small>Evanston, IL</small></h4>
+                    <p class="service">Service since 1990</p>
+                    <ul>
+                        <li>1301 Central Computer Room UPS Replacement</li>
+                        <li>1301 Central Generator and Service Upgrade</li>
+                        <li>Birl Building</li>
+                        <li>Burch Building</li>
+                        <li>Burch II Office & Research</li>
+                        <li>Campus Fire Alarm Upgrades</li>
+                        <li>Campus Improvements (Infrastructure)</li>
+                        <li>Cardiac Catheterization Expansion</li>
+                        <li>Computer Center & Offices "Forest City"</li>
+                        <li>Distribution Upgrade - Campus wide</li>
+                        <li>D&T Building</li>
+                        <li>Emergency Department</li>
+                        <li>Epic System Phase 1</li>
+                        <li>EWH Building</li>
+                        <li>Fire Alarm Upgrade</li>
+                        <li>Generator Upgrade</li>
+                        <li>Glenlake Medical Office Building</li>
+                        <li>Gurnee MOB 3rd Floor</li>
+                        <li>Kellogg Building</li>
+                        <li>Lincolnwood Medical Office Building</li>
+                        <li>McDougall Littel Building</li>
+                        <li>NMR Lab Remodel</li>
+                        <li>New Building - Vernon Hills, IL</li>
+                        <li>South Building</li>
+                        <li>Telephone System Redistribution</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>Glenbrook Hospital<br><small>Glenview, IL</small></h4>
+                    <p class="service">Service since 1995</p>
+                    <ul>
+                        <li>Cardiac Cath Equipment Replacement</li>
+                        <li>Central Plant Upgrades</li>
+                        <li>Chillers 1 & 2 Replacement</li>
+                        <li>Elevators 1-4 Modernization</li>
+                        <li>Epic System Phase 1</li>
+                        <li>Generator Upgrade</li>
+                        <li>ICU Expansion</li>
+                        <li>LIN ACC Remodel</li>
+                        <li>Medical Office Building (MOB)</li>
+                        <li>Security System Replacement</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>Highland Park Hospital<br><small>Highland Park, IL</small></h4>
+                    <p class="service">Service since 2000</p>
+                    <ul>
+                        <li>Ambulatory Care Center - New</li>
+                        <li>Basement SWS Gear Replacement</li>
+                        <li>Cardiac Catheterization Lab Expansion</li>
+                        <li>Central Plant - New</li>
+                        <li>Computer Room Upgrade</li>
+                        <li>East Parking Structure</li>
+                        <li>ER Remodel</li>
+                        <li>Fire Alarm Replacement</li>
+                        <li>Lobby Remodel</li>
+                        <li>Master Planning</li>
+                        <li>Outpatient Treatment Center</li>
+                        <li>OR Cardiac Surgery Remodel</li>
+                        <li>PACS System</li>
+                        <li>Site Improvements</li>
+                        <li>Sonet Ring</li>
+                        <li>Southwest Parking Garage - New</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="northwesterMini">
+                        <h4>Lake Forest Hospital<br><small>Lake Forest, IL</small></h4>
+                        <ul>
+                            <li>LDRP Renovation</li>
+                            <li>Surgery Building</li>
+                        </ul>
+                </div>
+                <div class="info-popover" id="presenceMini">
+                    <h4>Holy Family medical Center<br><small>Des Plaines, IL</small></h4>
+                    <p class="service">Service since 1985</p>
+                    <ul>
+                        <li>Second Floor Remodel</li>
+                        <li>Co-Generation Study</li>
+                        <li>Communication Networking System</li>
+                        <li>Emergency System Upgrade - Campus wide</li>
+                        <li>Fire Alarm Upgrade</li>
+                        <li>Fire Pump Upgrade</li>
+                        <li>Outdoor Medium Voltage Redistribution</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>Our Lady of Resurrection Hospital<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>Addison St. Garden</li>
+                        <li>Emergency System Upgrade</li>
+                        <li>Fire Pump Emergency Upgrade</li>
+                        <li>GI Lab</li>
+                        <li>MRI Replacement</li>
+                        <li>POB Lobby/Corridor</li>
+                    </ul>
+                    <h4>Resurrection Health Care Corp.<br><small>Chicago, IL</small></h4>
+                    <p class="service">Service since 1990</p>
+                    <ul>
+                        <li>Retirement Community Fire Alarm Upgrade</li>
+                        <li>St. Andrew's
+                            <ul>
+                            <li>Generator Replacement</li>
+                            <li>Fire Alarm Upgrade</li>
+                            <li>Dormitory Fire Pump</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4>Resurrection Medical Center<br><small>Chicago, IL</small></h4>
+                    <p class="service">Service since 19974</p>
+                    <ul>
+                        <li>Campus Site Work
+                        <ul>
+                            <li>Existing Switchgear Replacement</li>
+                            <li>Emergency Generator</li>
+                            <li>New Switchgear</li>
+                            <li>Site Lighting</li>
+                        </ul>
+                        </li>
+                        <li>Emergency Department Remodel</li>
+                        <li>Nurse Call Upgrade</li>
+                        <li>Patient Care Addition</li>
+                        <li>Professional Office Building and Tenant Build-out</li>
+                        <li>Skilled Nursing Home</li>
+                        <li>Surgery Expansion</li>
+                    </ul>
+                    <h4>St Francis Hospital<br><small>Evanstron, IL</small></h4>
+                    <p class="service">Service since 1995</p>
+                    <ul>
+                        <li>Ambulatory Surgery</li>
+                        <li>Chapel</li>
+                        <li>Cardiology Unit & Open Heart</li>
+                        <li>Chiller Upgrade</li>
+                        <li>Convent Demolition</li>
+                        <li>C/T and MRI</li>
+                        <li>Doctors Lounge</li>
+                        <li>Fire Protection/Fire Alarm Replacement</li>
+                        <li>Infrastructure Master Plan</li>
+                        <li>Lobby & Gift Shop</li>
+                        <li>Normal/Essential Power Upgrade</li>
+                        <li>Obsetrics</li>
+                        <li>Patient Floor Renovations</li>
+                        <li>Telephone Replacement</li>
+                    </ul>
+                    <h4>St Joseph Hospital & Healthcare Center<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>4th Floor Women's and Children's Center</li>
+                        <li>Campus Nurse Call System Upgrade</li>
+                        <li>Data Center Renovation</li>
+                        <li>Fire Alarm System Replacement</li>
+                        <li>Fire Pump Upgrade</li>
+                        <li>Surgery Ventilation Upgrade</li>
+                        <li>TB Isolation Rooms</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="rushMini">
+                    <h4>Rush Copley Medical Center<br><small>Aurora, IL</small></h4>
+                    <ul>
+                        <li>Medical Office Building</li>
+                        <li>Replacement Hospital</li>
+                    </ul>
+                    <h4>Rush North Shore Medical Center<br><small>Skokie, IL</small></h4>
+                    <ul>
+                        <li>Cal-Devon Professional Office Building</li>
+                        <li>ER Dept Critical Power Upgrade</li>
+                        <li>Generator Upgrade</li>
+                        <li>Kenton Building</li>
+                        <li>Knox Building</li>
+                        <li>OR</li>
+                        <li>Payne Street Medical Office Building</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="uchicagoMini">
+                    <h4>Ingalls Health System<br><small>Harvey, IL</small></h4>
+                    <p class="service">Service since 1990</p>
+                    <ul>
+                        <li>Cafeteria</li>
+                        <li>Cancer Center Building</li>
+                        <li>Family Care Centers (Tinley Park and Calumet City, IL)</li>
+                        <li>Generator Replacement/Upgrade</li>
+                        <li>LDRP Renovation</li>
+                        <li>Open Heart Surgery</li>
+                        <li>Professional Office Building Addition</li>
+                        <li>Upgrade Boiler Plant</li>
+                        <li>Upgrade Domestic Hot Water Systems</li>
+                        <li>Upgrade East Bldg Chiller Plant</li>
+                        <li>Upgrade West Bldg Cooling Systems</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                    <h4>University of Chicago Hospitals<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>Data Center Building</li>
+                        <li>NICU Remodeling</li>
+                        <li>Pharmacy Robot</li>
+                        <li>Wyler Children's Hospital Remodel</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="uicMini">
+                    <h4>University of Illinois at Chicago<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>Labor/Delivery Room</li>
+                        <li>Organ Transplant Unit Remodel</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="westsuburbanMini">
+                    <h4>West Suburban Medical Center<br><small>Oak Park, IL</small></h4>
+                    <ul>
+                        <li>Cafeteria Infrastructure</li>
+                        <li>Cardiac Cath lab</li>
+                        <li>Chilled Water Distribution Upgrade</li>
+                        <li>Emergency Department</li>
+                        <li>Fire Alarm Upgrade</li>
+                        <li>Fire Protection</li>
+                        <li>GI Lab</li>
+                        <li>MRI Replacement</li>
+                        <li>New Emergency Generator</li>
+                        <li>Special Procedure Room</li>
+                        <li>WSCON Building Departmental Relocations</li>
+                    </ul>
+                    <h4>Westlake Hospital<br><small>Melrose Park, IL</small></h4>
+                    <ul>
+                        <li>Basement Chiller Replacement</li>
+                        <li>Catheterization Lab Remodel</li>
+                        <li>Occupational Therapy</li>
+                        <li>Psych Ward Remodel</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="elmhurtsMini">
+                    <h4>Elmhurst Memorial Hospital<br><small>Elmhurst, IL</small></h4>
+                    <ul>
+                        <li>Emergency Generator Upgrade</li>
+                        <li>Linear Accelerator</li>
+                        <li>MRI Replacement</li>
+                        <li>OR Power</li>
+                        <li>Risk Assessment Study</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="hinesMini">
+                    <h4>Hines V.A. Hospital<br><small>Hines, IL</small></h4>
+                    <ul>
+                        <li>Chiller Replacement Feeder Upgrade</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="kindredMini">
+                    <h4>Kindred Hospital<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>CT Scanner</li>
+                        <li>Electrical System Improvement</li>
+                        <li>Psychiatric Ward</li>
+                        <li>Skilled Nursing Facility</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="mercyMini">
+                    <h4>Mercy Hospital<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>Third Floor Birth Place</li>
+                        <li>Cafeteria Remodel</li>
+                        <li>ER Renovation</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="rmlMini">
+                    <h4>RML Specialty Hospital<br><small>Hinsdale, IL</small></h4>
+                    <p class="service">Service since 1992</p>
+                    <ul>
+                        <li>480V Service Upgrade</li>
+                        <li>CT Scanner Addition</li>
+                        <li>Emergency Power</li>
+                        <li>master Plan Fire Protection</li>
+                        <li>Nurser Call System Replacement</li>
+                        <li>Unit Ventilator Remodel</li>
+                        <li>Upgrade Electrical Service</li>
+                        <li>Numerous Renovation Projects</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="shrinersMini">
+                    <h4>Shriners Hospital<br><small>Chicago, IL</small></h4>
+                    <ul><li>Gait Lab</li></ul>
+                </div>
+                <div class="info-popover" id="stanthonyMini">
+                    <h4>St. Anthony Hospital<br><small>Chicago, IL</small></h4>
+                    <ul>
+                        <li>MRI Remodel</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="silvercrossMini">
+                    <h4>Silver Cross Hospital<br><small>Joliet, IL</small></h4>
+                    <p class="service">Service since 1987</p>
+                    <p>(Location Closed)</p>
+                    <ul>
+                        <li>Ambulatory Building</li>
+                        <li>Chiller Replacement</li>
+                        <li>Emergency Department Addition</li>
+                        <li>Emergency Generator</li>
+                        <li>ER Dept Expansion</li>
+                        <li>Infrastructure Upgrade</li>
+                        <li>Medical Office Building</li>
+                        <li>Obstetrics Remodel</li>
+                        <li>Radiology Addition/Remodel</li>
+                        <li>South Campus Infrastructure</li>
+                        <li>Surgery Expansion</li>
+                    </ul>
+                </div>
+                <div class="info-popover" id="columbusMini">
+                    <h4>Columbus Hospital<br><small>Chicago, IL</small></h4>
+                    <p>(Location Closed)</p>
+                    <ul><li>Electrical System Assessment Study</li></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>   
+    </div>
+</div>
 
 <div id="bottomNav-placeholder"></div>
 <script src="../jQuery/jquery-3.3.1.js"></script>
@@ -1012,21 +1569,33 @@
         $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
     });
 
+
+
 $('.group').click(function(){
-    let $activeDrawer = $('.drawer.active');
-    if($('.drawer.active:first').is(":visible")){
-        $activeDrawer.slideUp("slow").removeClass("active");
-    }
-    $activeDrawer.removeClass("active");
-    let h = $(this).attr("id");
-    if($('#'+h+'Info:first').is(":hidden")) {
-        $(this).find('.back').css("filter", "brightness(90%) grayscale(0) ");
-        $('#' + h + 'Info').slideDown("slow").addClass("active");
-    } else{
-        $('#' + h + 'Info').slideUp("slow").removeClass("active");
-        $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+    if($(window).width() > 576){
+        let $activeDrawer = $('.drawer.active');
+        if($('.drawer.active:first').is(":visible")){
+            $activeDrawer.slideUp("slow").removeClass("active");
+        }
+        $activeDrawer.removeClass("active");
+        let h = $(this).attr("id");
+        if($('#'+h+'Info:first').is(":hidden")) {
+            $(this).find('.back').css("filter", "brightness(90%) grayscale(0) ");
+            $('#' + h + 'Info').slideDown("slow").addClass("active");
+        } else{
+            $('#' + h + 'Info').slideUp("slow").removeClass("active");
+            $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+        }
+    } else {
+        $(".info-popover.active").removeClass("active").hide();
+        let h = $(this).attr("id");
+        $("#"+h+"Mini").addClass("active").show();
+        $("#project-popover").modal("show");
     }
 });
+$("#close-popover").click(function(){
+    $("#project-popover").modal("hide");
+})
 
 
 
