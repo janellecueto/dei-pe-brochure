@@ -89,6 +89,8 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
     padding: 10px;
     display: none;
 } 
+ul.outer{display: flex; flex-flow: wrap column; max-height: 50vh;}
+        span.liTitle{font-size: 18px; font-weight: bold;}
 
 #amita div.back{background-image: url("../photos/healthcare/St Alexius 3.JPG"); }
 #adventHealth div.back{background-image: url("../photos/healthcare/munroe.JPG"); }
@@ -121,8 +123,12 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 #institutional div.back{background: url("../photos/institutional/institutional.jpg"); background-size: cover;}
 #instMisc div.back{background: url("../photos/institutional/misc.JPG"); background-size: cover;}
 
+#rec div.back{background: url("../photos/recreational/01450 - GreenAcres.jpg"); background-size: cover; background-position: center;}
+#mun div.back{background: url("../photos/recreational/municipal.JPG");}
+#govt div.back{background: url("../photos/recreational/government.JPG"); background-position: center;}
+
 /****** General Styling ******/
-h1{font-size: 5vw;}
+h1{font-size: 4vw;}
 h3{font-size: 3vw;}
 .container, .container-fluid{ position: relative; padding: 60px;}
 .container.top{top: 0; padding: 20px;}

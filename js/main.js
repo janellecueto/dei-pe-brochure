@@ -1,5 +1,4 @@
 $(function(){
-    $("#nav-placeholder").load("../templates/navbar.html");
     $("#bottomNav-placeholder").load("../templates/bottomnav.html");
 });
 
@@ -39,4 +38,27 @@ $(".sec").hover(function(){
     $(this).find('.back').css("filter", "brightness(90%) grayscale(0)");
 }, function(){
     $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+});
+
+$('.group').click(function(){
+    if($(window).width() > 576){
+        let $activeDrawer = $('.drawer.active');
+        if($('.drawer.active:first').is(":visible")){
+            $activeDrawer.slideUp("slow").removeClass("active");
+        }
+        $activeDrawer.removeClass("active");
+        let h = $(this).attr("id");
+        if($('#'+h+'Info:first').is(":hidden")) {
+            $(this).find('.back').css("filter", "brightness(90%) grayscale(0) ");
+            $('#' + h + 'Info').slideDown("slow").addClass("active");
+        } else{
+            $('#' + h + 'Info').slideUp("slow").removeClass("active");
+            $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+        }
+    } else {
+        $(".info-popover.active").removeClass("active").hide();
+        let h = $(this).attr("id");
+        $("#"+h+"Mini").addClass("active").show();
+        $("#project-popover").modal("show");
+    }
 });
