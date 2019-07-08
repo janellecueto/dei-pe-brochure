@@ -48,7 +48,7 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
 #contactUs{padding: 60px; background: #7171a0; color: white;}
 #contactUs a{color: white;}
 
-.form-control:focus{border: #e75457; box-shadow: 0 0 0 0.2rem rgba(231,84,87,0.75);}
+/* .form-control:focus{border: #e75457; box-shadow: 0 0 0 0.2rem rgba(231,84,87,0.75);} */
 #contactForm input[type=submit]{width: 100%; border: 2px solid white; color: white; background-color: transparent;}
 #contactForm input[type=submit]:focus, #contactForm input[type=submit]:hover{background-color: white; color: #e75457; box-shadow: none;}
 
