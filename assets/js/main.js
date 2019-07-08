@@ -37,10 +37,17 @@ $(".sec").hover(function(){
  $('.group').hover(function(){
     $(this).find('.back').css("filter", "brightness(90%) grayscale(0)");
 }, function(){
-    $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+    if(!$(this).hasClass("active")){
+        $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
+    }
 });
 
 $('.group').click(function(){
+    if(!$(this).hasClass("active")){
+        $(".group.active").find(".back").css("filter", "brightness(40%) grayscale(80%)");
+        $(".group.active").removeClass("active");
+    }
+    $(this).addClass("active");
     if($(window).width() > 576){
         let $activeDrawer = $('.drawer.active');
         if($('.drawer.active:first').is(":visible")){

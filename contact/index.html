@@ -108,6 +108,42 @@
         </div>
     </div>
 </div>
+<div class="modal" tabindex="-1" role="dialog" id="received">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Thank you!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Your response has been received!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" role="dialog" id="receivedFailed">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Sorry!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>We are no longer receiving responses at this time. Please contact the office by phone or email.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
 <div id="bottomNav-placeholder"></div>
 </body>
 <script src="../assets/jQuery/jquery-3.3.1.js"></script>
@@ -125,9 +161,13 @@
             data: $(this).serialize()
         }).then(function(response){
             if(response == '1'){
-                alert("Thank you! Your response has been received.");
+                $("input[name='name']").val("");
+                $("input[name='email']").val("");
+                $("input[name='phone']").val("");
+                $("textarea[name='comments']").val("");
+                $("#received").modal("show");
             } else {
-                alert("We are no longer receiving responses at this time. Please contact the office by phone or email.");
+                $("#receivedFailed").modal("show");
             }
         })
     })
