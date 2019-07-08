@@ -1,6 +1,10 @@
 # dei-pe-brochure
 www.dei-pe.com website, redesigned. private use for IT Staff at DEI
 
-Currently, this design is still under construction meaning it is NOT in use or hosted on our servers. 
+### Issues
+- Picture placeholders in projects > healthcare.html need to be replaced
+- Look into resizing for services blocks
+- about > staff.html pictures need to be replaced
+- contact form? 
 
-Static Bootstrap files are located in /js and /css, /jQuery contains static jquery library.
+

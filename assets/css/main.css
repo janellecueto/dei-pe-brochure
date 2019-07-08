@@ -150,7 +150,8 @@ h3{font-size: 3vw;}
 .jumbotron{margin-top: 56px; background-color: #7171a0; color: white;}
 a.btn{font-weight: bold;}
 small{opacity: 0.8;}
-.page-title{margin-top: 56px; padding: 40px; font-family: 'Anton', sans-serif;}
+.page-title{margin-top: 56px; padding: 20px 40px; font-family: 'Anton', sans-serif;}
+.page-title h1{font-size: 3.5rem;}
 .page-title.inverse{background: #343a40; color: white;}
 span.role{font-style: italic;} /** From About/Staff **/
 .row-big{margin-bottom: 50px;}

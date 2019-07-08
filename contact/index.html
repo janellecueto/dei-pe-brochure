@@ -99,10 +99,10 @@
         </div>
         <div class="col-md" id="formContainer">
             <form action="#" method="get" id="contactForm">
-                <input type="text" placeholder="Full Name" class="form-control" ><br>
-                <input type="email" placeholder="Email" class="form-control"><br>
-                <input type="text" placeholder="Phone" class="form-control"><br>
-                <textarea placeholder="Comments" class="form-control" rows="5"></textarea><br>
+                <input type="text" placeholder="Full Name" class="form-control" name="name"><br>
+                <input type="email" placeholder="Email" class="form-control" name="email"><br>
+                <input type="text" placeholder="Phone" class="form-control" name="phone"><br>
+                <textarea placeholder="Comments" class="form-control" rows="5" name="comments"></textarea><br>
                 <input type="submit" value="SUBMIT" class="btn btn-primary" style="font-weight: bold;">
             </form>
         </div>
@@ -116,5 +116,20 @@
     $(function(){
         $("#bottomNav-placeholder").load("../templates/bottomnav.html");
     });
+
+    $("#contactForm").submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            method: "POST",
+            url: "../assets/php/submitContact.php",
+            data: $(this).serialize()
+        }).then(function(response){
+            if(response == '1'){
+                alert("Thank you! Your response has been received.");
+            } else {
+                alert("We are no longer receiving responses at this time. Please contact the office by phone or email.");
+            }
+        })
+    })
 </script>
 </html>
