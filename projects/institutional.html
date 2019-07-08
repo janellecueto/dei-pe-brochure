@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <title>DEI Projects</title>
     <style>
         .group .mtext{text-align: center;}
@@ -245,36 +245,48 @@
                 </div>
             </div>
         </div>
-        <div class="drawer text-center" id="universityInfo">
+        <div class="drawer" id="universityInfo">
             <ul class="outer">
-                <li>Benedictine College (Lisle, IL)</li>
-                <li>Chicago State University (Chicago, IL)</li>
-                <li>Columbia College (Chicago, IL)</li>
-                <li>Lake Forest College (Lake Forest, IL)</li>
-                <li>Loyola University (Chicago, IL)</li>
-                <li>Midwestern University (Downers Grove, IL)</li>
-                <li>National Louis University (Wheaton, IL)</li>
-                <li>North Park University (Chicago, IL)</li>
-                <li>Northwestern University (Evanston, IL)</li>
-                <li>Oakton Community College (Des Plaines, IL)</li>
+                <li><span class="liTitle">Universities</span>
+                    <ul>
+                        <li>Benedictine College (Lisle, IL)</li>
+                        <li>Chicago State University (Chicago, IL)</li>
+                        <li>Columbia College (Chicago, IL)</li>
+                        <li>Lake Forest College (Lake Forest, IL)</li>
+                        <li>Loyola University (Chicago, IL)</li>
+                        <li>Midwestern University (Downers Grove, IL)</li>
+                        <li>National Louis University (Wheaton, IL)</li>
+                        <li>North Park University (Chicago, IL)</li>
+                        <li>Northwestern University (Evanston, IL)</li>
+                        <li>Oakton Community College (Des Plaines, IL)</li>
+                    </ul>                
+                </li>
             </ul>
         </div>
-        <div class="drawer text-center" id="institutionalInfo">
+        <div class="drawer" id="institutionalInfo">
             <ul class="outer">
-                <li>Allstate Child Care Center (Norhtbrook, IL)</li>
-                <li>Croya Youth Organization (Lake Forest, IL)</li>
-                <li>Early Childhood Development Center (Waukegan, IL)</li>
-                <li>The Family Institute (Evanston, IL)</li>
-                <li>Lake Forest Academy (Lake Forest, IL)</li>
-                <li>Maryville Career Center (Des Plaines, IL)</li>
-                <li>Northern Suburban Special Education (Highland Park, IL)</li>
-                <li>Scottish Home (North Riverside, IL)</li>
-                <li>Winnetka Public Nursery (Winnetka, IL)</li>
+                <li><span class="liTitle">Institutional Facilities</span>
+                    <ul>
+                        <li>Allstate Child Care Center (Norhtbrook, IL)</li>
+                        <li>Croya Youth Organization (Lake Forest, IL)</li>
+                        <li>Early Childhood Development Center (Waukegan, IL)</li>
+                        <li>The Family Institute (Evanston, IL)</li>
+                        <li>Lake Forest Academy (Lake Forest, IL)</li>
+                        <li>Maryville Career Center (Des Plaines, IL)</li>
+                        <li>Northern Suburban Special Education (Highland Park, IL)</li>
+                        <li>Scottish Home (North Riverside, IL)</li>
+                        <li>Winnetka Public Nursery (Winnetka, IL)</li>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <div class="drawer text-center" id="instMiscInfo">
+        <div class="drawer" id="instMiscInfo">
             <ul class="outer">
-                <li>Aveda School of Cosmetology (Chicago, IL)</li>
+                <li><span class="liTitle">Miscellaneous</span>
+                    <ul>
+                        <li>Aveda School of Cosmetology (Chicago, IL)</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -456,32 +468,11 @@
         </div>
     </div>
     <div id="bottomNav-placeholder"></div>
-    <script src="../jQuery/jquery-3.3.1.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../assets/jQuery/jquery-3.3.1.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script>
-    // $('.group').click(function(){
-    //     if($(window).width() > 576){
-    //         let $activeDrawer = $('.drawer.active');
-    //         if($('.drawer.active:first').is(":visible")){
-    //             $activeDrawer.slideUp("slow").removeClass("active");
-    //         }
-    //         $activeDrawer.removeClass("active");
-    //         let h = $(this).attr("id");
-    //         if($('#'+h+'Info:first').is(":hidden")) {
-    //             $(this).find('.back').css("filter", "brightness(90%) grayscale(0) ");
-    //             $('#' + h + 'Info').slideDown("slow").addClass("active");
-    //         } else{
-    //             $('#' + h + 'Info').slideUp("slow").removeClass("active");
-    //             $(this).find(".back").css("filter", "brightness(40%) grayscale(80%)");
-    //         }
-    //     } else {
-    //         $(".info-popover.active").removeClass("active").hide();
-    //         let h = $(this).attr("id");
-    //         $("#"+h+"Mini").addClass("active").show();
-    //         $("#project-popover").modal("show");
-    //     }
-    // });
+
     </script>
 </body>
 </html>

@@ -90,7 +90,7 @@ a.nav-link:hover, a.navbar-brand:hover, #portalLink:hover{color: #fff;}
     display: none;
 } 
 ul.outer{display: flex; flex-flow: wrap column; max-height: 50vh;}
-        span.liTitle{font-size: 18px; font-weight: bold;}
+span.liTitle{font-size: 18px; font-weight: bold;}
 
 #amita div.back{background-image: url("../photos/healthcare/St Alexius 3.JPG"); }
 #adventHealth div.back{background-image: url("../photos/healthcare/munroe.JPG"); }
