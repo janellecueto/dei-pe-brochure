@@ -127,6 +127,21 @@ ul.outer{display: flex; flex-flow: wrap column; max-height: 50vh;}
 #mun div.back{background: url("../photos/recreational/municipal.JPG");}
 #govt div.back{background: url("../photos/recreational/government.JPG"); background-position: center;}
 
+#corporate div.back{background: url("../photos/misc/corporate.jpg"); background-size: cover;}
+#retail div.back{background: url("../photos/misc/retail.JPG"); background-size: cover; background-position: center;}
+#office div.back{background: url("../photos/misc/office.JPG"); background-size: cover;}
+#housing div.back{background: url("../photos/misc/housing.jpg"); background-size: cover;}
+#churches div.back{background: url("../photos/misc/churches.jpg"); background-size: cover; background-position: center;}
+#hotel div.back{background: url("../photos/misc/hotels.JPG"); background-size: cover; background-position: center;}
+#restaurants div.back{background: url("../photos/misc/restaurants.JPG"); background-size: cover;}
+#industrial div.back{background: url("../photos/misc/industrial.JPG"); background-size: cover;}
+#computer div.back{background: url("../photos/misc/computer.jpg"); background-size: cover;}
+#communication div.back{background: url("../photos/misc/communication.jpg"); background-size: cover;}
+#medium div.back{background: url("../photos/misc/medium.jpg"); background-size: cover;}
+#labs div.back{background: url("../photos/misc/labs.JPG"); background-size: cover;}
+#airports div.back{background: url("../photos/misc/airports.JPG"); background-size: cover;}
+#financial div.back{background: url("../photos/misc/financial.JPG"); background-size: cover;}
+
 /****** General Styling ******/
 h1{font-size: 4vw;}
 h3{font-size: 3vw;}
