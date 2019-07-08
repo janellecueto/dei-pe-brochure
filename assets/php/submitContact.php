@@ -1,6 +1,7 @@
 <?php
 
 include("config.php");
+include("generateRaw.php");
 
 $name = str_replace("'", '"', $_POST['name']);
 $email = $_POST['email'];
@@ -23,6 +24,16 @@ if($conn->query($query)){
 } else {
     echo 0;
 }
+
+$subject = "DEI-PE.COM web form submission";
+$message = "\nWeb form submission details:\n\n";
+$message .= "   Name: $name\n";
+$message .= "   Email: $email\n";
+$message .= "   Phone: $phone\n";
+$message .= "   Commends: $comments\n\n";
+$message .= "Sent $timestamp\n";
+
+GenerateRaw("wf-".date('ymdthis'), "noreply@dei-pe.com", "jay.tolbert@dei-pe.com", $subject, $message);
 
 $conn->close();
 
